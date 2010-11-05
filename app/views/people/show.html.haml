@@ -1,0 +1,75 @@
+-#   Copyright (c) 2010, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+- content_for :page_title do
+  profile
+
+.span-4.append-1.last
+  %h2= @person.real_name
+  #profile
+    .profile_photo
+      = person_image_link(@person)
+    %ul
+      -unless @posts.first.nil?
+        %li
+          %b.small= @person.diaspora_handle
+        %li
+          %i= t(".last_seen",:how_long_ago => how_long_ago(@posts.first))
+
+      - if @person != current_user.person && @contact
+        %li
+          %i= t(".friends_since",:how_long_ago => how_long_ago(@person))
+        %li
+          .person_aspects
+            ➔
+            %ul
+              - for aspect in @aspects_with_person
+                %li= link_to aspect.name, aspect
+
+    - if @person != current_user.person && @contact
+      = link_to t('.remove_friend'), @person, :confirm => t('are_you_sure'), :method => :delete, :class => "button"
+
+    - if @person == current_user.person
+      %b
+        = link_to t('.edit_my_profile'), edit_person_path(@person)
+
+    %br
+    %br
+    = link_to t('_photos'), person_photos_path(@person)
+
+
+.span-15.last
+
+  - if @contact || current_user.person == @person
+
+    - if @posts.count > 0
+      %ul#stream
+        - for post in @posts
+          = render type_partial(post), :post => post
+        = will_paginate @posts
+    - else
+      %h3= t('.no_posts')
+
+  - else
+    
+    .floating
+      %h3
+        = t('.not_friends', :name => @person.real_name)
+        
+
+      - unless @pending_request
+        %h3
+          .description
+            = t('.request_people')
+         
+        = form_for Request.new do |f|
+          = f.select(:aspect_id, @aspects_dropdown_array)
+          = f.hidden_field :destination_url, :value => @person.diaspora_handle
+          = f.submit t('.add_friend')
+
+      - else
+        %h3
+          .description
+            = t('.already_requested', :name => @person.real_name)
+

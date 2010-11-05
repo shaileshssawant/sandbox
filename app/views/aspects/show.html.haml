@@ -1,0 +1,18 @@
+-#   Copyright (c) 2010, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+.span-4.append-1.last
+  = render 'shared/aspect_friends', :people => @friends, :aspect => @aspect
+
+.span-15.last
+  = render 'aspects/no_friends_message'
+  = render 'shared/publisher', :aspect => @aspect
+  = render 'aspects/no_posts_message'
+  %ul#stream
+    - for post in @posts
+      = render type_partial(post), :post => post
+
+  #pagination
+    = will_paginate @posts
+

@@ -1,0 +1,3889 @@
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 00:37:57 -0700 2010
+  Processing by AspectsController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Thu Oct 28 00:37:58 -0700 2010
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.3ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered devise/sessions/new.html.haml within layouts/application (35.8ms)
+Completed 200 OK in 810ms (Views: 41.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Thu Oct 28 00:38:09 -0700 2010
+  Processing by RegistrationsController#new as HTML
+Rendered posts/_debug.haml (3.9ms)
+Rendered registrations/new.html.haml within layouts/application (140.1ms)
+Completed 200 OK in 382ms (Views: 148.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at Thu Oct 28 00:38:33 -0700 2010
+  Processing by RegistrationsController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"dhaval", "password"=>"[FILTERED]", "email"=>"dhaval2025@gmail.com"}}
+Redirected to http://localhost:3000/
+Completed 302 Found in 15917ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 00:38:49 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 346ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 00:38:49 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 248ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Thu Oct 28 00:38:50 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (21.4ms)
+Rendered js/_websocket_js.haml (8.4ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (14.1ms)
+Rendered posts/_debug.haml (3.4ms)
+Rendered users/getting_started.html.haml within layouts/application (86.1ms)
+Completed 200 OK in 449ms (Views: 92.1ms)
+
+
+Started POST "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Thu Oct 28 00:39:23 -0700 2010
+  Processing by PeopleController#update as HTML
+  Parameters: {"commit"=>"Save and continue →", "person"=>{"profile"=>{"image_url"=>"", "last_name"=>"Patel", "bio"=>"skfjkslndgksn", "first_name"=>"Dhaval"}}, "authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "utf8"=>"✓", "id"=>"4cc928897f125d0c4f000006", "#<ActionView::Helpers::FormBuilder:0xb63db8a8>"=>{"birthday(1i)"=>"1984", "birthday(2i)"=>"12", "birthday(3i)"=>"2"}, "getting_started"=>"1"}
+Redirected to http://localhost:3000/getting_started?step=2
+Completed 302 Found in 676ms
+
+
+Started GET "/getting_started?step=2" for 127.0.0.1 at Thu Oct 28 00:39:24 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"2"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_users_getting_started__step___html_haml__682215932__617779118_2716574 at /home/shailesh_sawant/diaspora/app/views/users/getting_started/_step_2.html.haml:13)
+Rendered requests/_new_request.haml (8.9ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered users/getting_started/_step_2.html.haml (33.1ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (14.4ms)
+Rendered posts/_debug.haml (3.4ms)
+Rendered users/getting_started.html.haml within layouts/application (96.6ms)
+Completed 200 OK in 468ms (Views: 102.4ms)
+
+
+Started POST "/aspects" for 127.0.0.1 at Thu Oct 28 00:39:30 -0700 2010
+  Processing by AspectsController#create as JS
+  Parameters: {"aspect"=>{"name"=>"maverick"}, "authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "utf8"=>"✓"}
+Redirected to http://localhost:3000/aspects/4cc928b37f125d0c4f00000e
+Completed 302 Found in 350ms
+
+
+Started GET "/aspects/4cc928b37f125d0c4f00000e" for 127.0.0.1 at Thu Oct 28 00:39:31 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928b37f125d0c4f00000e"}
+Rendered shared/_add_friend_dropdown.html.haml (3.2ms)
+Rendered requests/_new_request.haml (12.8ms)
+Rendered invitations/_new.haml (7.6ms)
+Rendered shared/_invitations.haml (11.0ms)
+Rendered shared/_aspect_friends.haml (44.2ms)
+Rendered aspects/_no_friends_message.haml (3.9ms)
+Rendered shared/_publisher.haml (148.2ms)
+Rendered aspects/_no_posts_message.haml (2.4ms)
+Rendered js/_websocket_js.haml (9.6ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/show.html.haml within layouts/application (266.9ms)
+Completed 200 OK in 626ms (Views: 272.5ms)
+
+
+Started GET "/getting_started?step=2" for 127.0.0.1 at Thu Oct 28 00:39:31 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"2"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_users_getting_started__step___html_haml__682215932__619055828_2716574 at /home/shailesh_sawant/diaspora/app/views/users/getting_started/_step_2.html.haml:13)
+Rendered requests/_new_request.haml (8.3ms)
+Rendered requests/_new_request.haml (8.3ms)
+Rendered requests/_new_request.haml (7.9ms)
+Rendered users/getting_started/_step_2.html.haml (42.1ms)
+Rendered js/_websocket_js.haml (109.8ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (16.9ms)
+Rendered posts/_debug.haml (4.3ms)
+Rendered users/getting_started.html.haml within layouts/application (211.2ms)
+Completed 200 OK in 594ms (Views: 217.2ms)
+
+
+Started GET "/getting_started?step=3" for 127.0.0.1 at Thu Oct 28 00:39:36 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"3"}
+Rendered users/getting_started/_step_3.html.haml (5.3ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.4ms)
+Rendered shared/_aspect_nav.haml (14.6ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered users/getting_started.html.haml within layouts/application (68.9ms)
+Completed 200 OK in 434ms (Views: 74.5ms)
+
+
+Started GET "/getting_started?step=3" for 127.0.0.1 at Thu Oct 28 00:39:42 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"3"}
+Rendered users/getting_started/_step_3.html.haml (5.7ms)
+Rendered js/_websocket_js.haml (8.3ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (15.4ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered users/getting_started.html.haml within layouts/application (72.1ms)
+Completed 200 OK in 443ms (Views: 78.0ms)
+
+
+Started GET "/getting_started?step=2" for 127.0.0.1 at Thu Oct 28 00:39:45 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"2"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_users_getting_started__step___html_haml__682215932__619822218_2716574 at /home/shailesh_sawant/diaspora/app/views/users/getting_started/_step_2.html.haml:13)
+Rendered requests/_new_request.haml (108.3ms)
+Rendered requests/_new_request.haml (8.8ms)
+Rendered requests/_new_request.haml (9.3ms)
+Rendered users/getting_started/_step_2.html.haml (145.4ms)
+Rendered js/_websocket_js.haml (9.1ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.1ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered users/getting_started.html.haml within layouts/application (212.9ms)
+Completed 200 OK in 585ms (Views: 218.3ms)
+
+
+Started GET "/getting_started?step=3" for 127.0.0.1 at Thu Oct 28 00:39:48 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"3"}
+Rendered users/getting_started/_step_3.html.haml (5.5ms)
+Rendered js/_websocket_js.haml (107.7ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (16.9ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered users/getting_started.html.haml within layouts/application (171.5ms)
+Completed 200 OK in 545ms (Views: 177.3ms)
+
+
+Started PUT "/users/4cc928897f125d0c4f000005" for 127.0.0.1 at Thu Oct 28 00:40:02 -0700 2010
+  Processing by UsersController#update as */*
+  Parameters: {"id"=>"4cc928897f125d0c4f000005", "user"=>{"getting_started"=>"false"}}
+Redirected to http://localhost:3000/
+Completed 302 Found in 362ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 00:40:02 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (8.3ms)
+Rendered shared/_invitations.haml (11.5ms)
+Rendered shared/_aspect_friends.haml (28.0ms)
+Rendered aspects/_no_friends_message.haml (4.1ms)
+Rendered shared/_public_explain.haml (5.3ms)
+Rendered shared/_publisher.haml (156.6ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (14.9ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/index.html.haml within layouts/application (253.6ms)
+Completed 200 OK in 610ms (Views: 259.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 00:40:03 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (107.4ms)
+Rendered shared/_invitations.haml (110.6ms)
+Rendered shared/_aspect_friends.haml (127.3ms)
+Rendered aspects/_no_friends_message.haml (4.7ms)
+Rendered shared/_public_explain.haml (5.6ms)
+Rendered shared/_publisher.haml (57.1ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered js/_websocket_js.haml (8.3ms)
+Rendered aspects/_new_aspect.haml (5.4ms)
+Rendered shared/_aspect_nav.haml (14.7ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/index.html.haml within layouts/application (253.2ms)
+Completed 200 OK in 629ms (Views: 258.5ms)
+Alexander Hamiltom is adding xml to message queue to http://example.org/receive/users/4cc929ea7f125d0d1e000007/
+receiving friend request {"exported_key":"-----BEGIN RSA PUBLIC KEY-----\nMIICCgKCAgEAwXsuk3ebRM4CepUizFBDQhllQPKgOe5116epFVPNZoJt3uIuZkvK\n6RIIQROFo5pETMAuAcWGpHa9gtWOW+PPntFKb/9eUX2l2v5O7jLlNM1SjAUZEBWV\neoY/+STI3xvGAt/ez6A7MYQ5yxx0RmZYrACSQCDOBSL13xBkqgdTrZX4fkpXFNdn\nH6GAYOu6gND4gVHWYEi6UOdCPGc1lh294QROMGLg1G2BJDlXmLv/8oL1SDaE5qG4\nXA6ytnKGrJ5So034kf0ONb7Ax0S0JVme6iCiyost+/fQ1inlDECzR+5ca2Mdsaxd\nc/hTzaxnSBdQicTOEAD/OEX5nIjTmxTkup4t9av/ItKF8/U6zUu9THJMMDb6miA+\nzWEYsthFnMUj0gbjudW4hz1kR5xok88T5ROYMKuPfP7aQSzDJixOJTiepjc1BKAx\nrCuzp8yfiqBXmdhbjb6OBfoZ520+VJpdPEiXPIj4ygThi78JzLp6o1JfwHuwnHSJ\n/TDALYlIkhVz4yJy0+hgYJmVAHP5e+y89+Zj1xf8nj/qkgyHIP+W2P0VnRvEARw9\nQhN+VQTbblrcdzZ78lSYn8jAPZ2J1w1Bh7jupdfwEgKsnc0fUq8dylE9jILpK2YV\nz5fmmAvHBVeENRW5schld/g0U4/ECt8mUzHPCT4yiICJCyYjG1vCkZUCAwEAAQ==\n-----END RSA PUBLIC KEY-----\n","destination_url":"http://example.org/receive/users/4cc929ea7f125d0d1e000007/","aspect_id":"4cc929ea7f125d0d1e00000a","callback_url":"http://example.org/receive/users/4cc929e47f125d0d1e000003/","id":"4cc929ea7f125d0d1e00000c","person_id":"4cc929e47f125d0d1e000003"}
+Evan Korth has received a friend request
+Rendered notifier/new_request.html.haml (7.2ms)
+Rendered notifier/new_request.text.haml (2.0ms)
+
+Sent mail to korth@tom.joindiaspora.com (66ms)
+Date: Thu, 28 Oct 2010 00:44:42 -0700
+From: no-reply@joindiaspora.com
+To: Evan Korth <korth@tom.joindiaspora.com>
+Message-ID: <4cc929eaebd6e_d1e2447c72a3504e@shailesh.mail>
+Subject: new Diaspora* friend request from Alexander Hamiltom
+Mime-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="--==_mimepart_4cc929eac8d25_d1e2447c72a346ef";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+host: example.org
+
+
+
+----==_mimepart_4cc929eac8d25_d1e2447c72a346ef
+Date: Thu, 28 Oct 2010 00:44:42 -0700
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_4cc929eac84e9_d1e2447c72a34536";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4cc929eae8cd6_d1e2447c72a34914@shailesh.mail>
+
+
+
+----==_mimepart_4cc929eac84e9_d1e2447c72a34536
+Date: Thu, 28 Oct 2010 00:44:42 -0700
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4cc929eae5726_d1e2447c72a3474@shailesh.mail>
+
+hey Evan,
+Alexander Hamiltom (tom@example.org)
+just sent you a friend request on Diaspora*
+You should really think about checking it out.
+sign in here: http://example.org/users/sign_in
+love,
+the diaspora email robot
+
+
+----==_mimepart_4cc929eac84e9_d1e2447c72a34536
+Date: Thu, 28 Oct 2010 00:44:42 -0700
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4cc929eae7fe8_d1e2447c72a348c9@shailesh.mail>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <style type='text/css'>
+      /*<![CDATA[*/
+        body{
+          width:600px;
+          font-family:'Arial','Helvetica',sans-serif;
+          font-size:14px; 
+          color:#333;
+          }
+        #container{
+          margin-bottom:25px
+          min-height:400px;
+          padding-left:15px;
+        }
+        header{
+          background-color:#333;
+          padding: 15px;
+          margin-bottom: 25px;
+        }
+        p{
+          padding:5px;
+        }
+        p.small{
+          font-size:smaller;
+          color:#999;
+          font-style:italic;
+        }
+        a{
+          color:#107FC9;
+          font-weight:bold;
+        }
+        a:hover{
+          color: #22AAE0;
+        }
+        a:active{
+          color: #005D9C;
+        }
+        .large_text{
+          font-size:21px;
+          font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+        }
+      /*]]>*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <img alt="Diaspora_white" src="/images/diaspora_white.png?1288249040" />
+    </header>
+    <div id='container'>
+      <p>
+        Hello Evan!
+      </p>
+      <p>
+        Alexander Hamiltom (tom@example.org)
+        just sent you a friend request on Diaspora*
+        You should really think about checking it out.
+        <br>
+        <a href="http://example.org/users/sign_in">sign in here</a>
+        <br>
+        love,
+        <br>
+        the diaspora email robot
+      </p>
+    </div>
+  </body>
+</html>
+
+
+----==_mimepart_4cc929eac84e9_d1e2447c72a34536--
+
+
+----==_mimepart_4cc929eac8d25_d1e2447c72a346ef
+Date: Thu, 28 Oct 2010 00:44:42 -0700
+Mime-Version: 1.0
+Content-Type: image/png;
+ charset=UTF-8;
+ filename=diaspora_white.png
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename=diaspora_white.png
+Content-ID: <4cc929eab289d_d1e2447c72a344df@shailesh.mail>
+
+iVBORw0KGgoAAAANSUhEUgAAAI8AAAAVCAYAAAB/nr22AAAAGXRFWHRTb2Z0
+d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACEZJREFUeNq8WgtQFlUUvvx/
+Yv2hFAqMJOQr0xJLQ+zhi3w0ab6yxNCclBCJ1JJ8ZjZlalZqPrMQdWw0TVPR
+NLN8IqBWvjJfo4aaMv4mKmkaCnSOfP/Mtu7dvbs/dGa+gX937917zz33nO+c
+uwEzZsyok5mZWU8IcYe4XYoIeYRjQl1chBaEI4Rzim1CCWMJQwk3hD3hsT9L
+aBwVFVXJ4/HweLcRskz6iiQ0IbgN7l3G2M8I+1KD0JoQQ6hOuE44iPHstdFP
+jNfrrVlQUODSXQ/AmpwnHCBccTDGKoSJhBGEq4ptgqDnW3MIDQ0VGRkZQiQn
+J0+n38WECwa4jAEexOKGK7wohPA34RUbE3qVUEp42kabOwnTCH9hoXMJ2wkn
+oODDhGQ8p5dReB/P+6YOpVDqUkJ9GwZM2hQXCYWEQ4RdhD3YQGxEOwjdFfvb
+TChBu38MUII5v0e426bx9MQcu9lo0xy6vSXh4eGisJCmmZqaOp9+/04I0yEU
+OzSO8AnhTxiTlVFUw+IlKg7MDSVfI2QqtmEvuQ6G/ZJOgXwvlrAYC1nboP04
+zOchQgMNHkTbtwhnYURtLcaShAU9jE0QYbBrWYfLsGjfEO6x6HM3YSWhFsav
+RV1CK8J09PcT1kpVsqDrTRbP1SGMJlQmNCJk43qzyMjIkWQ8AT7jOaLwUp7w
+VAx4vIXx8I7prziZjjCCBBhdQ4U2/TGOphbPhUmuj1MISzzfDRhbLckzozEO
+9gCVFMYdB0/E7v9ek+f4/gKF/prB836PkGYlLWDovfC3mcmzEZg/b+w0whZE
+nzNkPKO1xnPUhuUmQWFDysl4srArWfYTvlBok4ud6VTGwbO4FfiBl7DIxP0n
+23w3G2I+4QeTBecFW6jYXxeMo73Cs2vwXoEw9LVCGw5vl/AOXquaZDy3wpbL
+geLTCR8SPlX0EmYSjd0wBb/5b1/wJitiekBUvPCunkzoQQjWbRDmODMJn9vs
+Mw/eth3CnL+yGn32UghDzxE+xm+mIi8Q7rNIZOKgB+ZzVbVh3OVwwO/C7U/w
+c+Jp8Da5+L0M7tSKVxWAr/wfsg1xXxu6BoNcj3TY5x5wlg8khN6u7Fcg94PB
+bX/E77UIoQMlzz8Aks+cbQDhZ/QxDOvkcmo8ReA/XQ0IoqowH+mDHeATJqhz
+CW9KSgc+WU54XoHzlIcUa4i47y8nA7NtpLpGMhk6iCuHMQaBBMukKrzcVGRq
+AmWMWYTXCHcZtDkPHpqI/5mjbUVCwe1KXX4MeC1idguH7QcgG1quu84Dq4na
+jUw4XOyDV4ivYON5FPH+NH7Xh6tf4We/pzCHTn7248GCZps80xf87kvd9QwY
+RQ+DNsxzduL/mxivQBlmi7/GcwqZSLSDtpXhAucY7JgTYPkjTNqz0XXAc0sI
+v4LA318BxjMYyvJq3Dl7nOPl0Den5A/72cdweJ6FJqUQpgfzYRBaycfmHW7x
+jn0oifxH/DGe61jEag7adgcZ+0xyn0PZU4TGJn14EbrY7R9DmzzUf55RHEep
+xf2JWNwxOrJ8xc+Q5ZMLOiLukwChVml/HfwzDXzGSDqAr02T3J8CB/CkhZ6K
+jIptTqUSXKaTEvkIpNqnJfc3wRCY+/Sz6GsLEIG0kgngevSRiuKdTEokBUg2
+mLcJL2JhcjT32W0HYv43/DQeDxIEI05ZH+8PMNjwEfAEfAwySpOtGgmT+s0m
+tbwd8NzDhHoFvEwc1Hl8EgmLTLRZ53kC7WIs+k+BEsMcjK0bssGL4Cx6GYOF
+PwqlapGP8eWDMOrlcZDouuXgeTaKskq4UYZ3FXM4q0MhxsfhpolF/42E2rFP
+Ap5TCvu+Oo8/nqcl/uY4SM/zEHbMBrsT8Zo9zySb71iF9jkgiU11XsKNHb9K
+530CYPi7sbBGXvUgnmnjJ+8JAtEdKilOLkYmpBc+X/wNXnuPxTvegJ7zLHS9
+F3MaCE+mJP4YzxAM/rCNNlGEzliUHGFeUi+G5/GlmEU2x5ePhVmBHbpLF3Iv
+KxBFGVlnXjUI2YpT4aIen8l9azJ/o7D4hyirkHOxbx5CjqwUEo9+tlrw22Js
+Is7KxqtSEafGE49d00mBdOozl0K4/hsWxsP91gaf6WKQ0quIz2Dq6YynFO92
+a+o4dmQCvFOCJOxYie+ziHQYuZCQZpnMgldhriM7lkhCH82R0Vrpugb4T7zy
+pnDAeZrCCyyS3JdxHlYYl7nH2lT0Zt3C25GGUIy+ZqR6tmUm06GHRg7a8tcD
+fKpfXXKfPbrVsYePp7SXlELOWRBpWbg/ZGFowunZFoec7Qg5STbb9oabTrfZ
+7iNRdvobo6ttJCi0HYbwlFsB9R/+bCML+mip2IbTcv4kg8+YusKAnArXt/Yj
+pLsNSiEctmba7JNDIX+a0lrlYResrNSC2LXFblmNyXdEyqoqLih7qYmblskG
+1DDSNNcawPPNkRBBD0h2P5DOSxVgPEXYTBuRHU0zycCCwCf4MLcVsp9sP99f
+Ak7HZYWXDUoh34mygqsdyQaHUuOCKSkp82A82TpsR1w/D36SC2VZSXVx+6cK
+PXDtMYeKSkX7eppriTDEa6jrvA9Pk45MhA9P+0j6mwSP5C4nQ+KxnEQGx7xh
+tobUrkHGw6F8LriFlXDJYIHiu9eD4Po+CGsHXbVxOJfeaP+I7IGQkJCyVD04
+OHhJWFiYVxh/zuj7Qi4X6aGKMK95B0rUsnneDb84nNBCFMY8mmsZINHdUdfp
+ieLdWXik+fjfSNaBE5SUk/HwWL4Ct+qMhCAYm+44jHWlDU8wNTY29mR0tNLJ
+zyBQiCrY6G7UsbY6nAtHFv6iUnraTzYjAgMDxb8CDACiIElwxbLXhwAAAABJ
+RU5ErkJggg==
+
+
+----==_mimepart_4cc929eac8d25_d1e2447c72a346ef--
+
+Receiving object for Alexander Hamiltom:
+#<Request exported_key: "-----BEGIN RSA PUBLIC KEY-----\nMIICCgKCAgEAqFf4hiIU8H7eqVCVgTrnZmcaIzOR4kH98U0qEB+IaaHmHLhTEETA\nk4N6quN74kjg0Y7v1luzy6yQ8xw4QEnAgvznzqOhmxUOEh8WGGPnbUQ/Ykt8aXpu\nFXlsn3f8ga+E3Jd6vIGZjzdXE/vj4DdxroWYevVcEX9U5CyfCWOjNstcUTFwwbyc\nMOPJZ9EUjA1WNDmMN0TsQfECvzM8FX52kntYnAj9aIZ2XxkXaHaGlqzEHttpWHPv\npRFldnCCU36PAVV1vQGWwG7V0StmSFa8QcBPFNrReIV+EPTJ2YlJ2WoxECYxnqv+\nSvppJI7WPj+K2BUaAdBo5GVwQ7qOnElBod0vJeDlp6zNNW2Eq+Lcy+iuiDcQCVRn\nKbnHS8VRepqa6JiD3xd3yQpR2CNQpW7/XkwJocwW4kGqApcijtXU4Va9rH4vEXZK\nfAgjMOdvKADmM6eLWmc9nMLHJOcsaZ/QepW3BKveIABId8Xgvgyta6pS1o/2ismR\n+cAjPkn3yR66X/LXZM3fiNqkSR9bjMk4p1Cd5UaDDXZOxQp/JQdy6ZzplqpunPSP\nU1Cq4Yh55V6TlERCKfk4s0NeEuVSz3Y4/N5qMzpOX20rjZkN2G7+9U2J42aIPTYO\nKG7lSpSQWsTI5V3Tm7iCDWHRqYMOF8EkBgEQ0TrvQ4704GleDHpj6O8CAwEAAQ==\n-----END RSA PUBLIC KEY-----\n", destination_url: "http://example.org/receive/users/4cc929e47f125d0d1e000003/", aspect_id: nil, callback_url: "http://example.org/receive/users/4cc929e47f125d0d1e000003/", _id: "4cc929ea7f125d0d1e00000c", person_id: BSON::ObjectId('4cc929ea7f125d0d1e000007')>
+From: #<Person created_at: Thu, 28 Oct 2010 07:44:42 UTC +00:00, updated_at: Thu, 28 Oct 2010 07:44:42 UTC +00:00, serialized_public_key: "-----BEGIN RSA PUBLIC KEY-----\nMIICCgKCAgEAqFf4hiIU8H7eqVCVgTrnZmcaIzOR4kH98U0qEB+IaaHmHLhTEETA\nk4N6quN74kjg0Y7v1luzy6yQ8xw4QEnAgvznzqOhmxUOEh8WGGPnbUQ/Ykt8aXpu\nFXlsn3f8ga+E3Jd6vIGZjzdXE/vj4DdxroWYevVcEX9U5CyfCWOjNstcUTFwwbyc\nMOPJZ9EUjA1WNDmMN0TsQfECvzM8FX52kntYnAj9aIZ2XxkXaHaGlqzEHttpWHPv\npRFldnCCU36PAVV1vQGWwG7V0StmSFa8QcBPFNrReIV+EPTJ2YlJ2WoxECYxnqv+\nSvppJI7WPj+K2BUaAdBo5GVwQ7qOnElBod0vJeDlp6zNNW2Eq+Lcy+iuiDcQCVRn\nKbnHS8VRepqa6JiD3xd3yQpR2CNQpW7/XkwJocwW4kGqApcijtXU4Va9rH4vEXZK\nfAgjMOdvKADmM6eLWmc9nMLHJOcsaZ/QepW3BKveIABId8Xgvgyta6pS1o/2ismR\n+cAjPkn3yR66X/LXZM3fiNqkSR9bjMk4p1Cd5UaDDXZOxQp/JQdy6ZzplqpunPSP\nU1Cq4Yh55V6TlERCKfk4s0NeEuVSz3Y4/N5qMzpOX20rjZkN2G7+9U2J42aIPTYO\nKG7lSpSQWsTI5V3Tm7iCDWHRqYMOF8EkBgEQ0TrvQ4704GleDHpj6O8CAwEAAQ==\n-----END RSA PUBLIC KEY-----\n", url: "http://example.org/", _id: BSON::ObjectId('4cc929ea7f125d0d1e000007'), owner_id: BSON::ObjectId('4cc929ea7f125d0d1e000006'), diaspora_handle: "korth@example.org">
+I got a reqest_id 4cc929ea7f125d0d1e00000c with old request #<Request exported_key: "-----BEGIN RSA PUBLIC KEY-----\nMIICCgKCAgEAqFf4hiIU8H7eqVCVgTrnZmcaIzOR4kH98U0qEB+IaaHmHLhTEETA\nk4N6quN74kjg0Y7v1luzy6yQ8xw4QEnAgvznzqOhmxUOEh8WGGPnbUQ/Ykt8aXpu\nFXlsn3f8ga+E3Jd6vIGZjzdXE/vj4DdxroWYevVcEX9U5CyfCWOjNstcUTFwwbyc\nMOPJZ9EUjA1WNDmMN0TsQfECvzM8FX52kntYnAj9aIZ2XxkXaHaGlqzEHttpWHPv\npRFldnCCU36PAVV1vQGWwG7V0StmSFa8QcBPFNrReIV+EPTJ2YlJ2WoxECYxnqv+\nSvppJI7WPj+K2BUaAdBo5GVwQ7qOnElBod0vJeDlp6zNNW2Eq+Lcy+iuiDcQCVRn\nKbnHS8VRepqa6JiD3xd3yQpR2CNQpW7/XkwJocwW4kGqApcijtXU4Va9rH4vEXZK\nfAgjMOdvKADmM6eLWmc9nMLHJOcsaZ/QepW3BKveIABId8Xgvgyta6pS1o/2ismR\n+cAjPkn3yR66X/LXZM3fiNqkSR9bjMk4p1Cd5UaDDXZOxQp/JQdy6ZzplqpunPSP\nU1Cq4Yh55V6TlERCKfk4s0NeEuVSz3Y4/N5qMzpOX20rjZkN2G7+9U2J42aIPTYO\nKG7lSpSQWsTI5V3Tm7iCDWHRqYMOF8EkBgEQ0TrvQ4704GleDHpj6O8CAwEAAQ==\n-----END RSA PUBLIC KEY-----\n", destination_url: "http://example.org/receive/users/4cc929e47f125d0d1e000003/", aspect_id: BSON::ObjectId('4cc929ea7f125d0d1e00000a'), callback_url: "http://example.org/receive/users/4cc929e47f125d0d1e000003/", _id: BSON::ObjectId('4cc929ea7f125d0d1e00000c'), person_id: BSON::ObjectId('4cc929ea7f125d0d1e000007')>
+receiving friend request {"exported_key":"-----BEGIN RSA PUBLIC KEY-----\nMIICCgKCAgEAqFf4hiIU8H7eqVCVgTrnZmcaIzOR4kH98U0qEB+IaaHmHLhTEETA\nk4N6quN74kjg0Y7v1luzy6yQ8xw4QEnAgvznzqOhmxUOEh8WGGPnbUQ/Ykt8aXpu\nFXlsn3f8ga+E3Jd6vIGZjzdXE/vj4DdxroWYevVcEX9U5CyfCWOjNstcUTFwwbyc\nMOPJZ9EUjA1WNDmMN0TsQfECvzM8FX52kntYnAj9aIZ2XxkXaHaGlqzEHttpWHPv\npRFldnCCU36PAVV1vQGWwG7V0StmSFa8QcBPFNrReIV+EPTJ2YlJ2WoxECYxnqv+\nSvppJI7WPj+K2BUaAdBo5GVwQ7qOnElBod0vJeDlp6zNNW2Eq+Lcy+iuiDcQCVRn\nKbnHS8VRepqa6JiD3xd3yQpR2CNQpW7/XkwJocwW4kGqApcijtXU4Va9rH4vEXZK\nfAgjMOdvKADmM6eLWmc9nMLHJOcsaZ/QepW3BKveIABId8Xgvgyta6pS1o/2ismR\n+cAjPkn3yR66X/LXZM3fiNqkSR9bjMk4p1Cd5UaDDXZOxQp/JQdy6ZzplqpunPSP\nU1Cq4Yh55V6TlERCKfk4s0NeEuVSz3Y4/N5qMzpOX20rjZkN2G7+9U2J42aIPTYO\nKG7lSpSQWsTI5V3Tm7iCDWHRqYMOF8EkBgEQ0TrvQ4704GleDHpj6O8CAwEAAQ==\n-----END RSA PUBLIC KEY-----\n","destination_url":"http://example.org/receive/users/4cc929e47f125d0d1e000003/","aspect_id":"4cc929ea7f125d0d1e00000a","callback_url":"http://example.org/receive/users/4cc929e47f125d0d1e000003/","id":"4cc929ea7f125d0d1e00000c","person_id":"4cc929ea7f125d0d1e000007"}
+Alexander Hamiltom's friend request has been accepted
+Rendered notifier/request_accepted.html.haml (7.2ms)
+Rendered notifier/request_accepted.text.haml (2.3ms)
+
+Sent mail to tom@tom.joindiaspora.com (44ms)
+Date: Thu, 28 Oct 2010 00:44:43 -0700
+From: no-reply@joindiaspora.com
+To: Alexander Hamiltom <tom@tom.joindiaspora.com>
+Message-ID: <4cc929eb22fe7_d1e2447c72a35748@shailesh.mail>
+Subject: Evan Korth has accepted your friend request on Diaspora*
+Mime-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="--==_mimepart_4cc929eb1cb2a_d1e2447c72a35389";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+host: example.org
+
+
+
+----==_mimepart_4cc929eb1cb2a_d1e2447c72a35389
+Date: Thu, 28 Oct 2010 00:44:43 -0700
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_4cc929eb1c343_d1e2447c72a352e4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4cc929eb21d44_d1e2447c72a3563a@shailesh.mail>
+
+
+
+----==_mimepart_4cc929eb1c343_d1e2447c72a352e4
+Date: Thu, 28 Oct 2010 00:44:43 -0700
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4cc929eb2060d_d1e2447c72a354a5@shailesh.mail>
+
+hey Alexander,
+Evan Korth (korth@example.org)
+has accepted your friend request. They are now in your
+other dudes asepct.
+http://example.org/aspects/4cc929ea7f125d0d1e00000a
+love, \n
+the diaspora email robot
+
+
+----==_mimepart_4cc929eb1c343_d1e2447c72a352e4
+Date: Thu, 28 Oct 2010 00:44:43 -0700
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4cc929eb212c6_d1e2447c72a355f0@shailesh.mail>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <style type='text/css'>
+      /*<![CDATA[*/
+        body{
+          width:600px;
+          font-family:'Arial','Helvetica',sans-serif;
+          font-size:14px; 
+          color:#333;
+          }
+        #container{
+          margin-bottom:25px
+          min-height:400px;
+          padding-left:15px;
+        }
+        header{
+          background-color:#333;
+          padding: 15px;
+          margin-bottom: 25px;
+        }
+        p{
+          padding:5px;
+        }
+        p.small{
+          font-size:smaller;
+          color:#999;
+          font-style:italic;
+        }
+        a{
+          color:#107FC9;
+          font-weight:bold;
+        }
+        a:hover{
+          color: #22AAE0;
+        }
+        a:active{
+          color: #005D9C;
+        }
+        .large_text{
+          font-size:21px;
+          font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+        }
+      /*]]>*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <img alt="Diaspora_white" src="/images/diaspora_white.png?1288249040" />
+    </header>
+    <div id='container'>
+      <p>
+        Hello Alexander!
+      </p>
+      <p>
+        Evan Korth (korth@example.org)
+        has accepted your friend request. They are now in your
+        <a href="http://example.org/aspects/4cc929ea7f125d0d1e00000a">other dudes</a>
+        aspect.
+        <br>
+        love,
+        <br>
+        the diaspora email robot
+      </p>
+    </div>
+  </body>
+</html>
+
+
+----==_mimepart_4cc929eb1c343_d1e2447c72a352e4--
+
+
+----==_mimepart_4cc929eb1cb2a_d1e2447c72a35389
+Date: Thu, 28 Oct 2010 00:44:43 -0700
+Mime-Version: 1.0
+Content-Type: image/png;
+ charset=UTF-8;
+ filename=diaspora_white.png
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename=diaspora_white.png
+Content-ID: <4cc929eb14c12_d1e2447c72a3518@shailesh.mail>
+
+iVBORw0KGgoAAAANSUhEUgAAAI8AAAAVCAYAAAB/nr22AAAAGXRFWHRTb2Z0
+d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACEZJREFUeNq8WgtQFlUUvvx/
+Yv2hFAqMJOQr0xJLQ+zhi3w0ab6yxNCclBCJ1JJ8ZjZlalZqPrMQdWw0TVPR
+NLN8IqBWvjJfo4aaMv4mKmkaCnSOfP/Mtu7dvbs/dGa+gX937917zz33nO+c
+uwEzZsyok5mZWU8IcYe4XYoIeYRjQl1chBaEI4Rzim1CCWMJQwk3hD3hsT9L
+aBwVFVXJ4/HweLcRskz6iiQ0IbgN7l3G2M8I+1KD0JoQQ6hOuE44iPHstdFP
+jNfrrVlQUODSXQ/AmpwnHCBccTDGKoSJhBGEq4ptgqDnW3MIDQ0VGRkZQiQn
+J0+n38WECwa4jAEexOKGK7wohPA34RUbE3qVUEp42kabOwnTCH9hoXMJ2wkn
+oODDhGQ8p5dReB/P+6YOpVDqUkJ9GwZM2hQXCYWEQ4RdhD3YQGxEOwjdFfvb
+TChBu38MUII5v0e426bx9MQcu9lo0xy6vSXh4eGisJCmmZqaOp9+/04I0yEU
+OzSO8AnhTxiTlVFUw+IlKg7MDSVfI2QqtmEvuQ6G/ZJOgXwvlrAYC1nboP04
+zOchQgMNHkTbtwhnYURtLcaShAU9jE0QYbBrWYfLsGjfEO6x6HM3YSWhFsav
+RV1CK8J09PcT1kpVsqDrTRbP1SGMJlQmNCJk43qzyMjIkWQ8AT7jOaLwUp7w
+VAx4vIXx8I7prziZjjCCBBhdQ4U2/TGOphbPhUmuj1MISzzfDRhbLckzozEO
+9gCVFMYdB0/E7v9ek+f4/gKF/prB836PkGYlLWDovfC3mcmzEZg/b+w0whZE
+nzNkPKO1xnPUhuUmQWFDysl4srArWfYTvlBok4ud6VTGwbO4FfiBl7DIxP0n
+23w3G2I+4QeTBecFW6jYXxeMo73Cs2vwXoEw9LVCGw5vl/AOXquaZDy3wpbL
+geLTCR8SPlX0EmYSjd0wBb/5b1/wJitiekBUvPCunkzoQQjWbRDmODMJn9vs
+Mw/eth3CnL+yGn32UghDzxE+xm+mIi8Q7rNIZOKgB+ZzVbVh3OVwwO/C7U/w
+c+Jp8Da5+L0M7tSKVxWAr/wfsg1xXxu6BoNcj3TY5x5wlg8khN6u7Fcg94PB
+bX/E77UIoQMlzz8Aks+cbQDhZ/QxDOvkcmo8ReA/XQ0IoqowH+mDHeATJqhz
+CW9KSgc+WU54XoHzlIcUa4i47y8nA7NtpLpGMhk6iCuHMQaBBMukKrzcVGRq
+AmWMWYTXCHcZtDkPHpqI/5mjbUVCwe1KXX4MeC1idguH7QcgG1quu84Dq4na
+jUw4XOyDV4ivYON5FPH+NH7Xh6tf4We/pzCHTn7248GCZps80xf87kvd9QwY
+RQ+DNsxzduL/mxivQBlmi7/GcwqZSLSDtpXhAucY7JgTYPkjTNqz0XXAc0sI
+v4LA318BxjMYyvJq3Dl7nOPl0Den5A/72cdweJ6FJqUQpgfzYRBaycfmHW7x
+jn0oifxH/DGe61jEag7adgcZ+0xyn0PZU4TGJn14EbrY7R9DmzzUf55RHEep
+xf2JWNwxOrJ8xc+Q5ZMLOiLukwChVml/HfwzDXzGSDqAr02T3J8CB/CkhZ6K
+jIptTqUSXKaTEvkIpNqnJfc3wRCY+/Sz6GsLEIG0kgngevSRiuKdTEokBUg2
+mLcJL2JhcjT32W0HYv43/DQeDxIEI05ZH+8PMNjwEfAEfAwySpOtGgmT+s0m
+tbwd8NzDhHoFvEwc1Hl8EgmLTLRZ53kC7WIs+k+BEsMcjK0bssGL4Cx6GYOF
+PwqlapGP8eWDMOrlcZDouuXgeTaKskq4UYZ3FXM4q0MhxsfhpolF/42E2rFP
+Ap5TCvu+Oo8/nqcl/uY4SM/zEHbMBrsT8Zo9zySb71iF9jkgiU11XsKNHb9K
+530CYPi7sbBGXvUgnmnjJ+8JAtEdKilOLkYmpBc+X/wNXnuPxTvegJ7zLHS9
+F3MaCE+mJP4YzxAM/rCNNlGEzliUHGFeUi+G5/GlmEU2x5ePhVmBHbpLF3Iv
+KxBFGVlnXjUI2YpT4aIen8l9azJ/o7D4hyirkHOxbx5CjqwUEo9+tlrw22Js
+Is7KxqtSEafGE49d00mBdOozl0K4/hsWxsP91gaf6WKQ0quIz2Dq6YynFO92
+a+o4dmQCvFOCJOxYie+ziHQYuZCQZpnMgldhriM7lkhCH82R0Vrpugb4T7zy
+pnDAeZrCCyyS3JdxHlYYl7nH2lT0Zt3C25GGUIy+ZqR6tmUm06GHRg7a8tcD
+fKpfXXKfPbrVsYePp7SXlELOWRBpWbg/ZGFowunZFoec7Qg5STbb9oabTrfZ
+7iNRdvobo6ttJCi0HYbwlFsB9R/+bCML+mip2IbTcv4kg8+YusKAnArXt/Yj
+pLsNSiEctmba7JNDIX+a0lrlYResrNSC2LXFblmNyXdEyqoqLih7qYmblskG
+1DDSNNcawPPNkRBBD0h2P5DOSxVgPEXYTBuRHU0zycCCwCf4MLcVsp9sP99f
+Ak7HZYWXDUoh34mygqsdyQaHUuOCKSkp82A82TpsR1w/D36SC2VZSXVx+6cK
+PXDtMYeKSkX7eppriTDEa6jrvA9Pk45MhA9P+0j6mwSP5C4nQ+KxnEQGx7xh
+tobUrkHGw6F8LriFlXDJYIHiu9eD4Po+CGsHXbVxOJfeaP+I7IGQkJCyVD04
+OHhJWFiYVxh/zuj7Qi4X6aGKMK95B0rUsnneDb84nNBCFMY8mmsZINHdUdfp
+ieLdWXik+fjfSNaBE5SUk/HwWL4Ct+qMhCAYm+44jHWlDU8wNTY29mR0tNLJ
+zyBQiCrY6G7UsbY6nAtHFv6iUnraTzYjAgMDxb8CDACiIElwxbLXhwAAAABJ
+RU5ErkJggg==
+
+
+----==_mimepart_4cc929eb1cb2a_d1e2447c72a35389--
+
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 01:06:14 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (8.6ms)
+Rendered shared/_invitations.haml (11.9ms)
+Rendered shared/_aspect_friends.haml (44.0ms)
+Rendered aspects/_no_friends_message.haml (4.1ms)
+Rendered shared/_public_explain.haml (5.3ms)
+Rendered shared/_publisher.haml (145.7ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered js/_websocket_js.haml (8.6ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (15.6ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/index.html.haml within layouts/application (261.1ms)
+Completed 200 OK in 519ms (Views: 267.1ms)
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Thu Oct 28 01:06:33 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (8.1ms)
+Rendered shared/_invitations.haml (11.2ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered requests/_new_request.haml (99.9ms)
+Rendered requests/_new_request.haml (8.9ms)
+Rendered js/_websocket_js.haml (8.6ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (14.7ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/manage.html.haml within layouts/application (219.8ms)
+Completed 200 OK in 560ms (Views: 225.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 01:06:38 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (8.2ms)
+Rendered shared/_invitations.haml (11.4ms)
+Rendered shared/_aspect_friends.haml (27.3ms)
+Rendered aspects/_no_friends_message.haml (4.2ms)
+Rendered shared/_public_explain.haml (5.3ms)
+Rendered shared/_publisher.haml (158.0ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (14.6ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/index.html.haml within layouts/application (253.7ms)
+Completed 200 OK in 598ms (Views: 259.1ms)
+
+
+Started GET "/aspects/4cc928b37f125d0c4f00000e" for 127.0.0.1 at Thu Oct 28 01:06:45 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928b37f125d0c4f00000e"}
+Rendered shared/_add_friend_dropdown.html.haml (3.9ms)
+Rendered requests/_new_request.haml (14.1ms)
+Rendered invitations/_new.haml (8.2ms)
+Rendered shared/_invitations.haml (11.6ms)
+Rendered shared/_aspect_friends.haml (162.6ms)
+Rendered aspects/_no_friends_message.haml (4.5ms)
+Rendered shared/_publisher.haml (49.5ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered js/_websocket_js.haml (7.8ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.4ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/show.html.haml within layouts/application (279.8ms)
+Completed 200 OK in 661ms (Views: 285.7ms)
+
+
+Started POST "/aspects" for 127.0.0.1 at Thu Oct 28 01:06:58 -0700 2010
+  Processing by AspectsController#create as HTML
+  Parameters: {"commit"=>"Create", "aspect"=>{"name"=>"test"}, "authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "utf8"=>"✓"}
+Redirected to http://localhost:3000/aspects/4cc92f227f125d0e36000011
+Completed 302 Found in 349ms
+
+
+Started GET "/aspects/4cc92f227f125d0e36000011" for 127.0.0.1 at Thu Oct 28 01:06:58 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc92f227f125d0e36000011"}
+Rendered shared/_add_friend_dropdown.html.haml (3.4ms)
+Rendered requests/_new_request.haml (12.8ms)
+Rendered invitations/_new.haml (7.6ms)
+Rendered shared/_invitations.haml (10.7ms)
+Rendered shared/_aspect_friends.haml (42.4ms)
+Rendered aspects/_no_friends_message.haml (3.7ms)
+Rendered shared/_publisher.haml (149.6ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered js/_websocket_js.haml (9.1ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (16.4ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/show.html.haml within layouts/application (264.7ms)
+Completed 200 OK in 621ms (Views: 270.3ms)
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Thu Oct 28 01:07:08 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (8.8ms)
+Rendered shared/_invitations.haml (12.0ms)
+Rendered requests/_new_request.haml (7.8ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered requests/_new_request.haml (117.1ms)
+Rendered requests/_new_request.haml (9.0ms)
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.8ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/manage.html.haml within layouts/application (252.2ms)
+Completed 200 OK in 615ms (Views: 257.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 01:07:21 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (8.4ms)
+Rendered shared/_invitations.haml (11.6ms)
+Rendered shared/_aspect_friends.haml (28.4ms)
+Rendered aspects/_no_friends_message.haml (102.6ms)
+Rendered shared/_public_explain.haml (5.2ms)
+Rendered shared/_publisher.haml (56.8ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (15.6ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/index.html.haml within layouts/application (252.6ms)
+Completed 200 OK in 607ms (Views: 258.2ms)
+Websocketing to 4cc930dd7f125d0f7d00000c
+
+
+Started POST "/status_messages" for 127.0.0.1 at Thu Oct 28 01:21:54 -0700 2010
+  Processing by StatusMessagesController#create as JS
+  Parameters: {"authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "utf8"=>"✓", "status_message"=>{"public"=>"false", "to"=>"all", "message"=>"hi"}}
+Rendered shared/_reshare.haml (12.8ms)
+Rendered comments/_new_comment.html.haml (5.5ms)
+Rendered comments/_comments.html.haml (12.4ms)
+Rendered status_messages/_status_message.html.haml (45.5ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 805ms (Views: 3.3ms)
+Websocketing to 4cc928897f125d0c4f000005
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 01:21:59 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.4ms)
+Rendered shared/_invitations.haml (13.2ms)
+Rendered shared/_aspect_friends.haml (31.6ms)
+Rendered aspects/_no_friends_message.haml (4.7ms)
+Rendered shared/_public_explain.haml (5.2ms)
+Rendered shared/_publisher.haml (18.5ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered shared/_reshare.haml (7.3ms)
+Rendered comments/_new_comment.html.haml (5.7ms)
+Rendered comments/_comments.html.haml (10.3ms)
+Rendered status_messages/_status_message.html.haml (39.2ms)
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (5.4ms)
+Rendered shared/_aspect_nav.haml (14.9ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/index.html.haml within layouts/application (158.4ms)
+Completed 200 OK in 691ms (Views: 164.5ms)
+
+
+Started GET "/aspects" for 127.0.0.1 at Thu Oct 28 01:39:27 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.2ms)
+Rendered shared/_invitations.haml (12.6ms)
+Rendered shared/_aspect_friends.haml (29.6ms)
+Rendered aspects/_no_friends_message.haml (4.0ms)
+Rendered shared/_public_explain.haml (5.0ms)
+Rendered shared/_publisher.haml (17.1ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered shared/_reshare.haml (7.2ms)
+Rendered comments/_new_comment.html.haml (108.2ms)
+Rendered comments/_comments.html.haml (112.6ms)
+Rendered status_messages/_status_message.html.haml (141.5ms)
+Rendered js/_websocket_js.haml (9.0ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (16.5ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered aspects/index.html.haml within layouts/application (261.0ms)
+Completed 200 OK in 646ms (Views: 266.8ms)
+
+
+Started GET "/aspects" for 127.0.0.1 at Thu Oct 28 01:39:31 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.4ms)
+Rendered shared/_invitations.haml (12.6ms)
+Rendered shared/_aspect_friends.haml (28.3ms)
+Rendered aspects/_no_friends_message.haml (4.1ms)
+Rendered shared/_public_explain.haml (5.4ms)
+Rendered shared/_publisher.haml (121.5ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered shared/_reshare.haml (7.9ms)
+Rendered comments/_new_comment.html.haml (6.4ms)
+Rendered comments/_comments.html.haml (11.4ms)
+Rendered status_messages/_status_message.html.haml (42.4ms)
+Rendered js/_websocket_js.haml (8.8ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (16.2ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/index.html.haml within layouts/application (265.8ms)
+Completed 200 OK in 659ms (Views: 271.4ms)
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Thu Oct 28 01:39:32 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (111.1ms)
+Rendered shared/_invitations.haml (114.2ms)
+Rendered requests/_new_request.haml (9.2ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (15.4ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered aspects/manage.html.haml within layouts/application (245.2ms)
+Completed 200 OK in 615ms (Views: 250.9ms)
+
+
+Started POST "/requests" for 127.0.0.1 at Thu Oct 28 01:39:50 -0700 2010
+  Processing by RequestsController#create as HTML
+  Parameters: {"commit"=>"Create Request", "authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "utf8"=>"✓", "request"=>{"destination_url"=>"abca@gmail.com", "aspect_id"=>"4cc928897f125d0c4f000007"}}
+Webfingering abca@gmail.com
+Completed   in 821ms
+
+NoMethodError (undefined method `href' for nil:NilClass):
+  app/models/person.rb:134:in `from_webfinger_profile'
+  app/models/person.rb:123:in `by_webfinger'
+  app/helpers/requests_helper.rb:34:in `relationship_flow'
+  app/controllers/requests_controller.rb:36:in `create'
+  lib/mongo_mapper/clear_dev_memory.rb:20:in `call'
+
+
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1562.8ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1675.2ms)
+
+
+Started POST "/users/invitation" for 127.0.0.1 at Thu Oct 28 01:40:40 -0700 2010
+  Processing by InvitationsController#create as HTML
+  Parameters: {"commit"=>"Send an invitation", "authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "utf8"=>"✓", "user"=>{"invite_messages"=>"", "aspects"=>"4cc928b37f125d0c4f00000e", "email"=>"shail.saw@gmail.com"}}
+Rendered devise/mailer/invitation.html.haml (19.5ms)
+
+Sent mail to shail.saw@gmail.com (33ms)
+Date: Thu, 28 Oct 2010 01:40:41 -0700
+From: please-change-me@config-initializers-devise.com
+To: shail.saw@gmail.com
+Message-ID: <4cc9370911e80_e362441172282e4@shailesh.mail>
+Subject: A friend wants you to join Diaspora!
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <style type='text/css'>
+      /*<![CDATA[*/
+        body{
+          width:600px;
+          font-family:'Arial','Helvetica',sans-serif;
+          font-size:14px; 
+          color:#333;
+          }
+        #container{
+          margin-bottom:25px
+          min-height:400px;
+          padding-left:15px;
+        }
+        header{
+          background-color:#333;
+          padding: 15px;
+          margin-bottom: 25px;
+        }
+        p{
+          padding:5px;
+        }
+        p.small{
+          font-size:smaller;
+          color:#999;
+          font-style:italic;
+        }
+        a{
+          color:#107FC9;
+          font-weight:bold;
+        }
+        a:hover{
+          color: #22AAE0;
+        }
+        a:active{
+          color: #005D9C;
+        }
+        .large_text{
+          font-size:21px;
+          font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+        }
+      /*]]>*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <img alt="Diaspora_white" src="/images/diaspora_white.png?1288249040" />
+    </header>
+    <div id='container'>
+      <p>
+        Hello shail.saw@gmail.com!
+      </p>
+      <p>
+        Dhaval Patel (dhaval@example.org) has invited you to join Diaspora at http://example.org/, you can accept it through the link below.
+      </p>
+      <p><a href="http://example.org/users/invitation/accept?invitation_token=BEEv60NrKComuZSGYlzv" class="large_text">Accept invitation</a></p>
+      <p class='small'>
+        If you don't want to accept the invitation, please ignore this email.
+        <br>
+        Your account won't be created until you access the link above and sign up.
+      </p>
+    </div>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 487ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 01:40:41 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (8.4ms)
+Rendered shared/_invitations.haml (11.5ms)
+Rendered shared/_aspect_friends.haml (20.1ms)
+Rendered aspects/_no_friends_message.haml (4.4ms)
+Rendered shared/_public_explain.haml (4.7ms)
+Rendered shared/_publisher.haml (16.9ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered shared/_reshare.haml (7.6ms)
+Rendered comments/_new_comment.html.haml (119.0ms)
+Rendered comments/_comments.html.haml (123.8ms)
+Rendered status_messages/_status_message.html.haml (154.1ms)
+Rendered js/_websocket_js.haml (9.3ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.7ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered aspects/index.html.haml within layouts/application (266.0ms)
+Completed 200 OK in 687ms (Views: 271.4ms)
+
+
+Started GET "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Thu Oct 28 01:41:18 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered shared/_reshare.haml (7.6ms)
+Rendered comments/_new_comment.html.haml (6.2ms)
+Rendered comments/_comments.html.haml (10.9ms)
+Rendered status_messages/_status_message.html.haml (41.4ms)
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (15.7ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered people/show.html.haml within layouts/application (106.6ms)
+Completed 200 OK in 547ms (Views: 112.1ms)
+
+
+Started GET "/aspects/4cc928b37f125d0c4f00000e" for 127.0.0.1 at Thu Oct 28 01:41:21 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928b37f125d0c4f00000e"}
+Rendered shared/_add_friend_dropdown.html.haml (3.2ms)
+Rendered requests/_new_request.haml (12.3ms)
+Rendered invitations/_new.haml (7.5ms)
+Rendered shared/_invitations.haml (10.7ms)
+Rendered shared/_aspect_friends.haml (33.2ms)
+Rendered aspects/_no_friends_message.haml (3.7ms)
+Rendered shared/_publisher.haml (13.4ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered shared/_reshare.haml (8.2ms)
+Rendered comments/_new_comment.html.haml (6.0ms)
+Rendered comments/_comments.html.haml (11.0ms)
+Rendered status_messages/_status_message.html.haml (41.9ms)
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (16.0ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/show.html.haml within layouts/application (267.2ms)
+Completed 200 OK in 701ms (Views: 272.7ms)
+
+
+Started GET "/people/4cc928897f125d0c4f000006/edit" for 127.0.0.1 at Thu Oct 28 01:41:41 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (15.6ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered people/edit.html.haml within layouts/application (78.6ms)
+Completed 200 OK in 471ms (Views: 84.0ms)
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 01:41:47 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (7.8ms)
+Rendered aspects/_new_aspect.haml (5.4ms)
+Rendered shared/_aspect_nav.haml (15.5ms)
+Rendered posts/_debug.haml (3.4ms)
+Rendered services/index.html.haml within layouts/application (60.9ms)
+Completed 200 OK in 444ms (Views: 66.2ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at Thu Oct 28 01:41:58 -0700 2010
+
+
+Started GET "/auth/twitter/callback?oauth_token=eijlrTV2nQ2VDvkF77fxxsj9IwQumtalmOAIC6w6zo&oauth_verifier=bja86eVl8dlY5g4X4XfKDrBWEBj2LtGBAnqMoG4DXNM" for 127.0.0.1 at Thu Oct 28 01:42:02 -0700 2010
+  Processing by ServicesController#create as HTML
+  Parameters: {"oauth_verifier"=>"bja86eVl8dlY5g4X4XfKDrBWEBj2LtGBAnqMoG4DXNM", "oauth_token"=>"eijlrTV2nQ2VDvkF77fxxsj9IwQumtalmOAIC6w6zo", "provider"=>"twitter"}
+Redirected to http://localhost:3000/services
+Completed 302 Found in 264ms
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 01:42:03 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (115.2ms)
+Rendered shared/_aspect_nav.haml (125.0ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered services/index.html.haml within layouts/application (172.4ms)
+Completed 200 OK in 444ms (Views: 178.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at Thu Oct 28 01:42:07 -0700 2010
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at Thu Oct 28 01:42:20 -0700 2010
+
+
+Started GET "/auth/twitter/callback?oauth_token=syBx3vCnbvKNZqmV2wTzhJHb1u33YPlVpIescTNCWmI&oauth_verifier=cP6KIaxVmS5QluFVP7TKBGLV3xUx2kffrpCOc8fWqJw" for 127.0.0.1 at Thu Oct 28 01:42:21 -0700 2010
+  Processing by ServicesController#create as HTML
+  Parameters: {"oauth_verifier"=>"cP6KIaxVmS5QluFVP7TKBGLV3xUx2kffrpCOc8fWqJw", "oauth_token"=>"syBx3vCnbvKNZqmV2wTzhJHb1u33YPlVpIescTNCWmI", "provider"=>"twitter"}
+Redirected to http://localhost:3000/services
+Completed 302 Found in 390ms
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 01:42:22 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (6.7ms)
+Rendered shared/_aspect_nav.haml (17.8ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered services/index.html.haml within layouts/application (187.3ms)
+Completed 200 OK in 459ms (Views: 192.5ms)
+
+
+Started POST "/services/4cc9375b7f125d0e36000043" for 127.0.0.1 at Thu Oct 28 01:42:33 -0700 2010
+  Processing by ServicesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "id"=>"4cc9375b7f125d0e36000043"}
+Redirected to http://localhost:3000/services
+Completed 302 Found in 430ms
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 01:42:34 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (7.1ms)
+Rendered shared/_aspect_nav.haml (19.7ms)
+Rendered posts/_debug.haml (4.2ms)
+Rendered services/index.html.haml within layouts/application (75.8ms)
+Completed 200 OK in 522ms (Views: 81.9ms)
+
+
+Started POST "/services/4cc9376e7f125d0e36000045" for 127.0.0.1 at Thu Oct 28 01:42:37 -0700 2010
+  Processing by ServicesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+uuFhTIRTZmOkHS97MCea5znrkfBxX3n3obLHaPtavM=", "id"=>"4cc9376e7f125d0e36000045"}
+Redirected to http://localhost:3000/services
+Completed 302 Found in 509ms
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 01:42:38 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (9.1ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (17.3ms)
+Rendered posts/_debug.haml (4.6ms)
+Rendered services/index.html.haml within layouts/application (68.8ms)
+Completed 200 OK in 519ms (Views: 74.4ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at Thu Oct 28 01:42:58 -0700 2010
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at Thu Oct 28 01:43:44 -0700 2010
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 01:44:27 -0700 2010
+  Processing by ServicesController#index as HTML
+Completed   in 86ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Thu Oct 28 01:44:27 -0700 2010
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.4ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered devise/sessions/new.html.haml within layouts/application (35.0ms)
+Completed 200 OK in 325ms (Views: 40.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Thu Oct 28 01:44:31 -0700 2010
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "utf8"=>"✓", "user"=>{"username"=>"dhaval2025@gmail.com", "password"=>"[FILTERED]"}}
+Redirected to http://localhost:3000/services
+Completed 302 Found in 543ms
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 01:44:32 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.4ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (15.4ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered services/index.html.haml within layouts/application (62.3ms)
+Completed 200 OK in 525ms (Views: 67.9ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at Thu Oct 28 01:44:35 -0700 2010
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 01:50:49 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (17.2ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered services/index.html.haml within layouts/application (66.5ms)
+Completed 200 OK in 376ms (Views: 72.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at Thu Oct 28 01:50:51 -0700 2010
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at Thu Oct 28 02:04:02 -0700 2010
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 02:07:45 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.9ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (16.9ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered services/index.html.haml within layouts/application (69.7ms)
+Completed 200 OK in 509ms (Views: 202.5ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at Thu Oct 28 02:07:48 -0700 2010
+
+
+Started GET "/auth/twitter/callback?oauth_token=WdbgylEWKrekOQxUPDP5jwLKuxmHdrXb771q7AuMQ&oauth_verifier=L1yXX1lo9wddMUOH2LJBV9lIshAp5EzJL4fan834VF4" for 127.0.0.1 at Thu Oct 28 02:07:53 -0700 2010
+  Processing by ServicesController#create as HTML
+  Parameters: {"oauth_verifier"=>"L1yXX1lo9wddMUOH2LJBV9lIshAp5EzJL4fan834VF4", "oauth_token"=>"WdbgylEWKrekOQxUPDP5jwLKuxmHdrXb771q7AuMQ", "provider"=>"twitter"}
+Redirected to http://localhost:3000/services
+Completed 302 Found in 466ms
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 02:07:54 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (9.1ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (16.3ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered services/index.html.haml within layouts/application (69.6ms)
+Completed 200 OK in 518ms (Views: 75.4ms)
+
+
+Started GET "/people/4cc928897f125d0c4f000006/edit" for 127.0.0.1 at Thu Oct 28 02:08:02 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.7ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered people/edit.html.haml within layouts/application (79.5ms)
+Completed 200 OK in 525ms (Views: 85.0ms)
+
+
+Started GET "/users/4cc928897f125d0c4f000005/edit" for 127.0.0.1 at Thu Oct 28 02:08:06 -0700 2010
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000005"}
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (16.7ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered users/edit.html.haml within layouts/application (71.4ms)
+Completed 200 OK in 524ms (Views: 77.0ms)
+
+
+Started GET "/services" for 127.0.0.1 at Thu Oct 28 02:08:15 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (131.6ms)
+Rendered shared/_aspect_nav.haml (141.4ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered services/index.html.haml within layouts/application (189.0ms)
+Completed 200 OK in 499ms (Views: 194.3ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at Thu Oct 28 02:08:19 -0700 2010
+
+
+Started GET "/aspects/4cc928897f125d0c4f000007" for 127.0.0.1 at Thu Oct 28 02:08:26 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000007"}
+Rendered shared/_add_friend_dropdown.html.haml (4.1ms)
+Rendered requests/_new_request.haml (15.3ms)
+Rendered invitations/_new.haml (8.8ms)
+Rendered shared/_invitations.haml (12.3ms)
+Rendered shared/_aspect_friends.haml (39.3ms)
+Rendered aspects/_no_friends_message.haml (4.2ms)
+Rendered shared/_publisher.haml (12.7ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered shared/_reshare.haml (7.9ms)
+Rendered comments/_new_comment.html.haml (5.9ms)
+Rendered comments/_comments.html.haml (10.9ms)
+Rendered status_messages/_status_message.html.haml (42.1ms)
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/show.html.haml within layouts/application (165.6ms)
+Completed 200 OK in 658ms (Views: 171.5ms)
+
+
+Started GET "/albums?aspect=4cc928897f125d0c4f000007" for 127.0.0.1 at Thu Oct 28 02:08:30 -0700 2010
+  Processing by AlbumsController#index as HTML
+  Parameters: {"aspect"=>"4cc928897f125d0c4f000007"}
+Rendered requests/_new_request.haml (8.1ms)
+Rendered invitations/_new.haml (8.3ms)
+Rendered shared/_invitations.haml (11.4ms)
+Rendered shared/_aspect_friends.haml (29.7ms)
+Rendered shared/_publisher.haml (194.0ms)
+Rendered js/_websocket_js.haml (8.9ms)
+Rendered aspects/_new_aspect.haml (6.4ms)
+Rendered shared/_aspect_nav.haml (17.1ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered albums/index.html.haml within layouts/application (288.0ms)
+Completed 200 OK in 595ms (Views: 293.7ms)
+
+
+Started POST "/albums" for 127.0.0.1 at Thu Oct 28 02:08:41 -0700 2010
+  Processing by AlbumsController#create as HTML
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "utf8"=>"✓", "album"=>{"name"=>"new", "to"=>"4cc928897f125d0c4f000007"}}
+Rendered albums/_album.html.haml (9.0ms)
+Redirected to http://localhost:3000/albums/4cc93d997f125d0e3600005b?aspect=4cc928897f125d0c4f000007
+Completed 302 Found in 840ms
+
+
+Started GET "/albums/4cc93d997f125d0e3600005b?aspect=4cc928897f125d0c4f000007" for 127.0.0.1 at Thu Oct 28 02:08:42 -0700 2010
+  Processing by AlbumsController#show as HTML
+  Parameters: {"aspect"=>"4cc928897f125d0c4f000007", "id"=>"4cc93d997f125d0e3600005b"}
+Rendered shared/_author_info.html.haml (9.5ms)
+Rendered photos/_new_photo.haml (2.4ms)
+Websocketing to 4cc928897f125d0c4f000005
+Rendered js/_websocket_js.haml (128.8ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (17.6ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered albums/show.html.haml within layouts/application (200.9ms)
+Completed 200 OK in 685ms (Views: 206.3ms)
+
+
+Started POST "/photos?qqfile=DSC03669.JPG&album_id=4cc93d997f125d0e3600005b" for 127.0.0.1 at Thu Oct 28 02:09:26 -0700 2010
+  Processing by PhotosController#create as HTML
+  Parameters: {"qqfile"=>"DSC03669.JPG", "album_id"=>"4cc93d997f125d0e3600005b"}
+Rendered comments/_new_comment.html.haml (6.3ms)
+Rendered comments/_comments.html.haml (13.8ms)
+Rendered photos/_photo.haml (35.7ms)
+Websocketing to 4cc928897f125d0c4f000005
+Completed 200 OK in 10613ms (Views: 0.2ms)
+
+
+Started GET "/albums/4cc93d997f125d0e3600005b/edit" for 127.0.0.1 at Thu Oct 28 02:09:40 -0700 2010
+  Processing by AlbumsController#edit as HTML
+  Parameters: {"id"=>"4cc93d997f125d0e3600005b"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_albums_edit_html_haml___843568204__635846678_0 at /home/shailesh_sawant/diaspora/app/views/albums/edit.html.haml:8)
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered albums/edit.html.haml within layouts/application (67.4ms)
+Completed 200 OK in 567ms (Views: 72.7ms)
+
+
+Started POST "/albums/4cc93d997f125d0e3600005b" for 127.0.0.1 at Thu Oct 28 02:09:48 -0700 2010
+  Processing by AlbumsController#update as HTML
+  Parameters: {"commit"=>"Update Album", "authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "utf8"=>"✓", "id"=>"4cc93d997f125d0e3600005b", "album"=>{"name"=>"new"}}
+Redirected to http://localhost:3000/albums/4cc93d997f125d0e3600005b
+Completed 302 Found in 358ms
+
+
+Started GET "/albums/4cc93d997f125d0e3600005b" for 127.0.0.1 at Thu Oct 28 02:09:48 -0700 2010
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4cc93d997f125d0e3600005b"}
+Rendered shared/_author_info.html.haml (10.4ms)
+Rendered photos/_new_photo.haml (2.6ms)
+Rendered js/_websocket_js.haml (9.0ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.6ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered albums/show.html.haml within layouts/application (86.4ms)
+Completed 200 OK in 568ms (Views: 92.3ms)
+
+
+Started GET "/photos/4cc93dc77f125d0e3600005e" for 127.0.0.1 at Thu Oct 28 02:09:52 -0700 2010
+  Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4cc93dc77f125d0e3600005e"}
+Rendered shared/_author_info.html.haml (10.0ms)
+Rendered comments/_new_comment.html.haml (6.0ms)
+Rendered comments/_comments.html.haml (10.6ms)
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (15.4ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered photos/show.html.haml within layouts/application (123.2ms)
+Completed 200 OK in 627ms (Views: 129.1ms)
+
+
+Started GET "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Thu Oct 28 02:10:09 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered comments/_new_comment.html.haml (6.4ms)
+Rendered comments/_comments.html.haml (11.6ms)
+Rendered photos/_photo.haml (34.3ms)
+Rendered shared/_reshare.haml (7.9ms)
+Rendered comments/_new_comment.html.haml (5.4ms)
+Rendered comments/_comments.html.haml (10.0ms)
+Rendered status_messages/_status_message.html.haml (41.8ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.8ms)
+Rendered posts/_debug.haml (5.1ms)
+Rendered people/show.html.haml within layouts/application (270.0ms)
+Completed 200 OK in 758ms (Views: 275.5ms)
+
+
+Started GET "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Thu Oct 28 02:10:12 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (10.9ms)
+Rendered photos/_photo.haml (34.8ms)
+Rendered shared/_reshare.haml (7.4ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (10.5ms)
+Rendered status_messages/_status_message.html.haml (39.7ms)
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered people/show.html.haml within layouts/application (142.6ms)
+Completed 200 OK in 637ms (Views: 148.2ms)
+
+
+Started GET "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Thu Oct 28 02:10:16 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered comments/_new_comment.html.haml (7.3ms)
+Rendered comments/_comments.html.haml (12.9ms)
+Rendered photos/_photo.haml (156.2ms)
+Rendered shared/_reshare.haml (8.3ms)
+Rendered comments/_new_comment.html.haml (6.9ms)
+Rendered comments/_comments.html.haml (12.5ms)
+Rendered status_messages/_status_message.html.haml (46.0ms)
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (17.2ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered people/show.html.haml within layouts/application (275.5ms)
+Completed 200 OK in 654ms (Views: 280.8ms)
+
+
+Started GET "/people/4cc928897f125d0c4f000006/edit" for 127.0.0.1 at Thu Oct 28 02:10:21 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (16.2ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered people/edit.html.haml within layouts/application (79.3ms)
+Completed 200 OK in 574ms (Views: 85.1ms)
+
+
+Started POST "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Thu Oct 28 02:10:29 -0700 2010
+  Processing by PeopleController#update as HTML
+  Parameters: {"commit"=>"Update Profile", "person"=>{"profile"=>{"image_url"=>"/uploads/images/thumb_medium_4cc93dc77f125d0e3600005e.jpg", "last_name"=>"Patel", "bio"=>"skfjkslndgksn", "first_name"=>"Dhaval"}}, "authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "utf8"=>"✓", "id"=>"4cc928897f125d0c4f000006", "checked_photo"=>"1", "#<ActionView::Helpers::FormBuilder:0xb42501d4>"=>{"birthday(1i)"=>"2010", "birthday(2i)"=>"10", "birthday(3i)"=>"28"}}
+Redirected to http://localhost:3000/people/4cc928897f125d0c4f000006/edit
+Completed 302 Found in 628ms
+
+
+Started GET "/people/4cc928897f125d0c4f000006/edit" for 127.0.0.1 at Thu Oct 28 02:10:30 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered js/_websocket_js.haml (9.1ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (16.4ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered people/edit.html.haml within layouts/application (206.2ms)
+Completed 200 OK in 564ms (Views: 211.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 02:10:40 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.0ms)
+Rendered shared/_invitations.haml (12.3ms)
+Rendered shared/_aspect_friends.haml (21.2ms)
+Rendered aspects/_no_friends_message.haml (4.3ms)
+Rendered shared/_public_explain.haml (6.4ms)
+Rendered shared/_publisher.haml (19.0ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered comments/_new_comment.html.haml (5.7ms)
+Rendered comments/_comments.html.haml (10.3ms)
+Rendered photos/_photo.haml (32.6ms)
+Rendered shared/_reshare.haml (7.6ms)
+Rendered comments/_new_comment.html.haml (132.6ms)
+Rendered comments/_comments.html.haml (137.3ms)
+Rendered status_messages/_status_message.html.haml (165.4ms)
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (17.0ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/index.html.haml within layouts/application (316.0ms)
+Completed 200 OK in 851ms (Views: 321.7ms)
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Thu Oct 28 02:10:50 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (9.0ms)
+Rendered shared/_invitations.haml (12.4ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered requests/_new_request.haml (7.9ms)
+Rendered requests/_new_request.haml (8.9ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.8ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/manage.html.haml within layouts/application (135.6ms)
+Completed 200 OK in 603ms (Views: 141.1ms)
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Thu Oct 28 02:10:51 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (8.6ms)
+Rendered shared/_invitations.haml (12.2ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered requests/_new_request.haml (7.7ms)
+Rendered requests/_new_request.haml (7.7ms)
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (6.6ms)
+Rendered shared/_aspect_nav.haml (18.1ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/manage.html.haml within layouts/application (260.3ms)
+Completed 200 OK in 698ms (Views: 265.7ms)
+
+
+Started POST "/aspects/4cc928897f125d0c4f000008" for 127.0.0.1 at Thu Oct 28 02:10:58 -0700 2010
+  Processing by AspectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "id"=>"4cc928897f125d0c4f000008"}
+Redirected to http://localhost:3000/aspects/manage
+Completed 302 Found in 465ms
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Thu Oct 28 02:10:58 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (10.2ms)
+Rendered shared/_invitations.haml (14.1ms)
+Rendered requests/_new_request.haml (9.0ms)
+Rendered requests/_new_request.haml (8.8ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (15.8ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered aspects/manage.html.haml within layouts/application (257.9ms)
+Completed 200 OK in 567ms (Views: 263.2ms)
+
+
+Started POST "/aspects" for 127.0.0.1 at Thu Oct 28 02:11:13 -0700 2010
+  Processing by AspectsController#create as HTML
+  Parameters: {"commit"=>"Create", "aspect"=>{"name"=>"newwe"}, "authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "utf8"=>"✓"}
+Redirected to http://localhost:3000/aspects/4cc93e317f125d0e36000086
+Completed 302 Found in 475ms
+
+
+Started GET "/aspects/4cc93e317f125d0e36000086" for 127.0.0.1 at Thu Oct 28 02:11:13 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc93e317f125d0e36000086"}
+Rendered shared/_add_friend_dropdown.html.haml (3.3ms)
+Rendered requests/_new_request.haml (13.1ms)
+Rendered invitations/_new.haml (8.1ms)
+Rendered shared/_invitations.haml (11.5ms)
+Rendered shared/_aspect_friends.haml (35.8ms)
+Rendered aspects/_no_friends_message.haml (3.9ms)
+Rendered shared/_publisher.haml (54.0ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/show.html.haml within layouts/application (276.8ms)
+Completed 200 OK in 734ms (Views: 290.0ms)
+
+
+Started GET "/people?utf8=%E2%9C%93&q=nmnm" for 127.0.0.1 at Thu Oct 28 02:11:24 -0700 2010
+  Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"nmnm"}
+Rendered js/_websocket_js.haml (9.3ms)
+Rendered aspects/_new_aspect.haml (6.6ms)
+Rendered shared/_aspect_nav.haml (17.6ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered people/index.html.haml within layouts/application (186.1ms)
+Completed 200 OK in 498ms (Views: 191.5ms)
+
+
+Started GET "/aspects/4cc92f227f125d0e36000011" for 127.0.0.1 at Thu Oct 28 02:11:30 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc92f227f125d0e36000011"}
+Rendered shared/_add_friend_dropdown.html.haml (3.4ms)
+Rendered requests/_new_request.haml (13.7ms)
+Rendered invitations/_new.haml (8.3ms)
+Rendered shared/_invitations.haml (11.9ms)
+Rendered shared/_aspect_friends.haml (36.8ms)
+Rendered aspects/_no_friends_message.haml (4.3ms)
+Rendered shared/_publisher.haml (12.2ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered shared/_reshare.haml (35.6ms)
+Rendered comments/_new_comment.html.haml (6.2ms)
+Rendered comments/_comments.html.haml (10.7ms)
+Rendered status_messages/_status_message.html.haml (66.7ms)
+Rendered js/_websocket_js.haml (9.3ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (17.4ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered aspects/show.html.haml within layouts/application (325.5ms)
+Completed 200 OK in 828ms (Views: 331.1ms)
+
+
+Started GET "/aspects/4cc928b37f125d0c4f00000e" for 127.0.0.1 at Thu Oct 28 02:11:31 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928b37f125d0c4f00000e"}
+Rendered shared/_add_friend_dropdown.html.haml (3.7ms)
+Rendered requests/_new_request.haml (13.9ms)
+Rendered invitations/_new.haml (8.4ms)
+Rendered shared/_invitations.haml (11.9ms)
+Rendered shared/_aspect_friends.haml (36.7ms)
+Rendered aspects/_no_friends_message.haml (4.2ms)
+Rendered shared/_publisher.haml (12.4ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered shared/_reshare.haml (36.3ms)
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (10.6ms)
+Rendered status_messages/_status_message.html.haml (66.9ms)
+Rendered js/_websocket_js.haml (142.9ms)
+Rendered aspects/_new_aspect.haml (6.5ms)
+Rendered shared/_aspect_nav.haml (18.1ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered aspects/show.html.haml within layouts/application (324.3ms)
+Completed 200 OK in 837ms (Views: 329.9ms)
+
+
+Started POST "/aspects/add_to_aspect" for 127.0.0.1 at Thu Oct 28 02:11:41 -0700 2010
+  Processing by AspectsController#add_to_aspect as HTML
+  Parameters: {"commit"=>"add to maverick", "aspect_id"=>"4cc928b37f125d0c4f00000e", "authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "utf8"=>"✓", "friend_id"=>""}
+Completed   in 465ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  lib/diaspora/user/friending.rb:127:in `contact_for'
+  app/models/user.rb:122:in `add_person_to_aspect'
+  app/controllers/aspects_controller.rb:87:in `add_to_aspect'
+  lib/mongo_mapper/clear_dev_memory.rb:20:in `call'
+
+
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1529.1ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1636.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 02:11:51 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.5ms)
+Rendered shared/_invitations.haml (13.0ms)
+Rendered shared/_aspect_friends.haml (22.0ms)
+Rendered aspects/_no_friends_message.haml (139.6ms)
+Rendered shared/_public_explain.haml (6.9ms)
+Rendered shared/_publisher.haml (21.8ms)
+Rendered aspects/_no_posts_message.haml (2.6ms)
+Rendered comments/_new_comment.html.haml (6.8ms)
+Rendered comments/_comments.html.haml (12.1ms)
+Rendered photos/_photo.haml (36.0ms)
+Rendered shared/_reshare.haml (15.9ms)
+Rendered comments/_new_comment.html.haml (5.7ms)
+Rendered comments/_comments.html.haml (10.7ms)
+Rendered status_messages/_status_message.html.haml (47.3ms)
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered aspects/index.html.haml within layouts/application (336.2ms)
+Completed 200 OK in 707ms (Views: 342.3ms)
+
+
+Started POST "/comments" for 127.0.0.1 at Thu Oct 28 02:12:09 -0700 2010
+  Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"post_id"=>"4cc93dc77f125d0e3600005e", "text"=>",,m,,,,m"}, "authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "utf8"=>"✓"}
+Signing ,,m,,,,m;4cc93dc77f125d0e3600005e;4cc93e697f125d0e3600009b
+Signing ,,m,,,,m;4cc93dc77f125d0e3600005e;4cc93e697f125d0e3600009b
+Rendered comments/_comment.html.haml (4.8ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 1492ms (Views: 1.0ms)
+Websocketing to 4cc928897f125d0c4f000005
+
+
+Started GET "/photos/4cc93dc77f125d0e3600005e" for 127.0.0.1 at Thu Oct 28 02:12:14 -0700 2010
+  Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4cc93dc77f125d0e3600005e"}
+Rendered shared/_author_info.html.haml (9.6ms)
+Rendered comments/_comment.html.haml (6.8ms)
+Rendered comments/_new_comment.html.haml (5.5ms)
+Rendered comments/_comments.html.haml (18.9ms)
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (16.0ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered photos/show.html.haml within layouts/application (134.1ms)
+Completed 200 OK in 644ms (Views: 139.4ms)
+
+
+Started POST "/comments" for 127.0.0.1 at Thu Oct 28 02:12:25 -0700 2010
+  Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"post_id"=>"4cc93dc77f125d0e3600005e", "text"=>",m    .,m.,"}, "authenticity_token"=>"yJrBdtphh1Ln2cAkj+K/QJS6O7Lt3eDRWIgf3I42CK4=", "utf8"=>"✓"}
+Signing ,m    .,m.,;4cc93dc77f125d0e3600005e;4cc93e797f125d0e3600009e
+Signing ,m    .,m.,;4cc93dc77f125d0e3600005e;4cc93e797f125d0e3600009e
+Rendered comments/_comment.html.haml (5.5ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 1453ms (Views: 1.3ms)
+Websocketing to 4cc928897f125d0c4f000005
+
+
+Started GET "/photos/4cc93dc77f125d0e3600005e" for 127.0.0.1 at Thu Oct 28 02:12:30 -0700 2010
+  Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4cc93dc77f125d0e3600005e"}
+Rendered shared/_author_info.html.haml (10.7ms)
+Rendered comments/_comment.html.haml (7.3ms)
+Rendered comments/_comment.html.haml (7.5ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (29.6ms)
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (16.0ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered photos/show.html.haml within layouts/application (287.3ms)
+Completed 200 OK in 658ms (Views: 292.6ms)
+
+
+Started GET "/photos/4cc93dc77f125d0e3600005e" for 127.0.0.1 at Thu Oct 28 02:12:32 -0700 2010
+  Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4cc93dc77f125d0e3600005e"}
+Rendered shared/_author_info.html.haml (10.9ms)
+Rendered comments/_comment.html.haml (8.3ms)
+Rendered comments/_comment.html.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (6.0ms)
+Rendered comments/_comments.html.haml (32.2ms)
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (16.4ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered photos/show.html.haml within layouts/application (159.5ms)
+Completed 200 OK in 681ms (Views: 165.6ms)
+
+
+Started PUT "/people/4cc928897f125d0c4f000005" for 127.0.0.1 at Thu Oct 28 02:12:36 -0700 2010
+  Processing by PeopleController#update as */*
+  Parameters: {"person"=>{"profile"=>{"image_url"=>"/uploads/images/thumb_medium_4cc93dc77f125d0e3600005e.jpg"}}, "id"=>"4cc928897f125d0c4f000005"}
+Redirected to http://localhost:3000/people/4cc928897f125d0c4f000005/edit
+Completed 302 Found in 620ms
+
+
+Started GET "/people/4cc928897f125d0c4f000005/edit" for 127.0.0.1 at Thu Oct 28 02:12:37 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000005"}
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (5.4ms)
+Rendered shared/_aspect_nav.haml (14.9ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered people/edit.html.haml within layouts/application (76.4ms)
+Completed 200 OK in 560ms (Views: 81.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 02:12:41 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.3ms)
+Rendered shared/_invitations.haml (12.7ms)
+Rendered shared/_aspect_friends.haml (22.0ms)
+Rendered aspects/_no_friends_message.haml (4.4ms)
+Rendered shared/_public_explain.haml (5.9ms)
+Rendered shared/_publisher.haml (18.6ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered comments/_comment.html.haml (8.0ms)
+Rendered comments/_comment.html.haml (7.7ms)
+Rendered comments/_new_comment.html.haml (6.3ms)
+Rendered comments/_comments.html.haml (31.7ms)
+Rendered photos/_photo.haml (190.1ms)
+Rendered shared/_reshare.haml (16.6ms)
+Rendered comments/_new_comment.html.haml (5.7ms)
+Rendered comments/_comments.html.haml (10.7ms)
+Rendered status_messages/_status_message.html.haml (48.9ms)
+Rendered js/_websocket_js.haml (8.8ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.4ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered aspects/index.html.haml within layouts/application (355.8ms)
+Completed 200 OK in 729ms (Views: 361.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 02:12:56 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.1ms)
+Rendered shared/_invitations.haml (12.8ms)
+Rendered shared/_aspect_friends.haml (21.4ms)
+Rendered aspects/_no_friends_message.haml (4.2ms)
+Rendered shared/_public_explain.haml (6.5ms)
+Rendered shared/_publisher.haml (19.1ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered comments/_comment.html.haml (7.3ms)
+Rendered comments/_comment.html.haml (6.9ms)
+Rendered comments/_new_comment.html.haml (5.5ms)
+Rendered comments/_comments.html.haml (28.2ms)
+Rendered photos/_photo.haml (49.6ms)
+Rendered shared/_reshare.haml (148.5ms)
+Rendered comments/_new_comment.html.haml (5.9ms)
+Rendered comments/_comments.html.haml (10.8ms)
+Rendered status_messages/_status_message.html.haml (179.5ms)
+Rendered js/_websocket_js.haml (9.1ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (17.0ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered aspects/index.html.haml within layouts/application (344.5ms)
+Completed 200 OK in 865ms (Views: 350.0ms)
+
+
+Started GET "/users/4cc928897f125d0c4f000005/edit" for 127.0.0.1 at Thu Oct 28 02:13:14 -0700 2010
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000005"}
+Rendered js/_websocket_js.haml (8.8ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (17.0ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered users/edit.html.haml within layouts/application (74.6ms)
+Completed 200 OK in 532ms (Views: 80.1ms)
+
+
+Started GET "/users/export_photos" for 127.0.0.1 at Thu Oct 28 02:13:20 -0700 2010
+  Processing by UsersController#export_photos as HTML
+Rendered text template (4.4ms)
+Sent data 4cc928897f125d0c4f000005.tar (10.7ms)
+Completed 200 OK in 581ms (Views: 10.5ms)
+
+
+Started GET "/users/export" for 127.0.0.1 at Thu Oct 28 02:13:43 -0700 2010
+  Processing by UsersController#export as HTML
+Rendered text template (0.0ms)
+Sent data dhaval_diaspora_data.xml (1.1ms)
+Completed 200 OK in 388ms (Views: 1.0ms)
+
+
+Started GET "/users/4cc928897f125d0c4f000005/edit" for 127.0.0.1 at Thu Oct 28 02:14:10 -0700 2010
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000005"}
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.6ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered users/edit.html.haml within layouts/application (69.7ms)
+Completed 200 OK in 374ms (Views: 75.3ms)
+
+
+Started GET "/aspects/4cc928897f125d0c4f000007" for 127.0.0.1 at Thu Oct 28 02:14:21 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000007"}
+Rendered shared/_add_friend_dropdown.html.haml (3.1ms)
+Rendered requests/_new_request.haml (12.4ms)
+Rendered invitations/_new.haml (7.7ms)
+Rendered shared/_invitations.haml (10.9ms)
+Rendered shared/_aspect_friends.haml (33.6ms)
+Rendered aspects/_no_friends_message.haml (3.7ms)
+Rendered shared/_publisher.haml (10.9ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered comments/_comment.html.haml (7.1ms)
+Rendered comments/_comment.html.haml (148.2ms)
+Rendered comments/_new_comment.html.haml (7.0ms)
+Rendered comments/_comments.html.haml (171.0ms)
+Rendered photos/_photo.haml (193.4ms)
+Rendered shared/_reshare.haml (17.1ms)
+Rendered comments/_new_comment.html.haml (6.2ms)
+Rendered comments/_comments.html.haml (11.2ms)
+Rendered status_messages/_status_message.html.haml (50.1ms)
+Rendered js/_websocket_js.haml (9.1ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (16.9ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/show.html.haml within layouts/application (363.1ms)
+Completed 200 OK in 865ms (Views: 368.4ms)
+
+
+Started GET "/aspects/4cc928b37f125d0c4f00000e" for 127.0.0.1 at Thu Oct 28 02:14:23 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928b37f125d0c4f00000e"}
+Rendered shared/_add_friend_dropdown.html.haml (14.4ms)
+Rendered requests/_new_request.haml (25.8ms)
+Rendered invitations/_new.haml (12.1ms)
+Rendered shared/_invitations.haml (16.0ms)
+Rendered shared/_aspect_friends.haml (53.5ms)
+Rendered aspects/_no_friends_message.haml (4.6ms)
+Rendered shared/_publisher.haml (13.1ms)
+Rendered aspects/_no_posts_message.haml (2.5ms)
+Rendered shared/_reshare.haml (42.4ms)
+Rendered comments/_new_comment.html.haml (6.5ms)
+Rendered comments/_comments.html.haml (11.7ms)
+Rendered status_messages/_status_message.html.haml (77.0ms)
+Rendered js/_websocket_js.haml (9.0ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (17.7ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/show.html.haml within layouts/application (220.0ms)
+Completed 200 OK in 762ms (Views: 225.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 02:15:08 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (8.9ms)
+Rendered shared/_invitations.haml (12.1ms)
+Rendered shared/_aspect_friends.haml (20.7ms)
+Rendered aspects/_no_friends_message.haml (4.5ms)
+Rendered shared/_public_explain.haml (5.8ms)
+Rendered shared/_publisher.haml (18.3ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered comments/_comment.html.haml (6.7ms)
+Rendered comments/_comment.html.haml (11.0ms)
+Rendered comments/_new_comment.html.haml (6.3ms)
+Rendered comments/_comments.html.haml (160.4ms)
+Rendered photos/_photo.haml (182.4ms)
+Rendered shared/_reshare.haml (16.4ms)
+Rendered comments/_new_comment.html.haml (5.9ms)
+Rendered comments/_comments.html.haml (11.1ms)
+Rendered status_messages/_status_message.html.haml (48.8ms)
+Rendered js/_websocket_js.haml (9.3ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/index.html.haml within layouts/application (343.4ms)
+Completed 200 OK in 715ms (Views: 348.9ms)
+
+
+Started DELETE "/photos/4cc93dc77f125d0e3600005e" for 127.0.0.1 at Thu Oct 28 02:15:29 -0700 2010
+  Processing by PhotosController#destroy as JS
+  Parameters: {"id"=>"4cc93dc77f125d0e3600005e"}
+Redirected to http://localhost:3000/albums/4cc93d997f125d0e3600005b
+Completed 302 Found in 529ms
+
+
+Started GET "/albums/4cc93d997f125d0e3600005b" for 127.0.0.1 at Thu Oct 28 02:15:30 -0700 2010
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4cc93d997f125d0e3600005b"}
+Rendered shared/_author_info.html.haml (10.4ms)
+Rendered photos/_new_photo.haml (2.8ms)
+Rendered js/_websocket_js.haml (9.1ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered albums/show.html.haml within layouts/application (81.9ms)
+Completed 200 OK in 581ms (Views: 87.5ms)
+
+
+Started DELETE "/photos/4cc93dc77f125d0e3600005e" for 127.0.0.1 at Thu Oct 28 02:15:36 -0700 2010
+  Processing by PhotosController#destroy as JS
+  Parameters: {"id"=>"4cc93dc77f125d0e3600005e"}
+Completed   in 323ms
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/photos_controller.rb:72:in `destroy'
+  lib/mongo_mapper/clear_dev_memory.rb:20:in `call'
+
+
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1448.9ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1487.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Oct 28 02:15:40 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.4ms)
+Rendered shared/_invitations.haml (12.8ms)
+Rendered shared/_aspect_friends.haml (22.0ms)
+Rendered aspects/_no_friends_message.haml (4.4ms)
+Rendered shared/_public_explain.haml (6.0ms)
+Rendered shared/_publisher.haml (19.3ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered shared/_reshare.haml (14.3ms)
+Rendered comments/_new_comment.html.haml (5.7ms)
+Rendered comments/_comments.html.haml (10.2ms)
+Rendered status_messages/_status_message.html.haml (44.8ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (16.0ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/index.html.haml within layouts/application (156.7ms)
+Completed 200 OK in 646ms (Views: 162.3ms)
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 17:45:49 -0700 2010
+  Processing by ServicesController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Wed Nov 03 17:45:49 -0700 2010
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (4.0ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered devise/sessions/new.html.haml within layouts/application (129.5ms)
+Completed 200 OK in 685ms (Views: 164.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Wed Nov 03 17:45:54 -0700 2010
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "user"=>{"username"=>"dhaval2025@gmail.com", "password"=>"[FILTERED]"}}
+Redirected to http://localhost:3000/services
+Completed 302 Found in 583ms
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 17:45:54 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.3ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (17.6ms)
+Rendered posts/_debug.haml (4.1ms)
+Rendered services/index.html.haml within layouts/application (201.8ms)
+Completed 200 OK in 572ms (Views: 207.7ms)
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /services
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:46:01 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.3ms)
+Rendered shared/_invitations.haml (116.5ms)
+Rendered shared/_aspect_friends.haml (125.8ms)
+Rendered aspects/_no_friends_message.haml (5.0ms)
+Rendered shared/_public_explain.haml (6.7ms)
+Rendered shared/_publisher.haml (21.0ms)
+Rendered aspects/_no_posts_message.haml (2.6ms)
+Rendered shared/_reshare.haml (15.4ms)
+Rendered comments/_new_comment.html.haml (8.5ms)
+Rendered comments/_comments.html.haml (15.8ms)
+Rendered status_messages/_status_message.html.haml (64.4ms)
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (15.5ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/index.html.haml within layouts/application (283.5ms)
+Completed 200 OK in 746ms (Views: 289.4ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Wed Nov 03 17:46:11 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (9.1ms)
+Rendered shared/_invitations.haml (12.7ms)
+Rendered requests/_new_request.haml (14.4ms)
+Rendered requests/_new_request.haml (8.9ms)
+Rendered requests/_new_request.haml (8.1ms)
+Rendered requests/_new_request.haml (7.7ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (15.7ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/manage.html.haml within layouts/application (171.1ms)
+Completed 200 OK in 533ms (Views: 177.0ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/manage
+
+
+Started POST "/requests" for 127.0.0.1 at Wed Nov 03 17:46:32 -0700 2010
+  Processing by RequestsController#create as HTML
+  Parameters: {"commit"=>"Create Request", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "request"=>{"destination_url"=>"shail.saw@gmail.com", "aspect_id"=>"4cc928897f125d0c4f000007"}}
+Webfingering shail.saw@gmail.com
+Completed   in 780ms
+
+NoMethodError (undefined method `href' for nil:NilClass):
+  app/models/person.rb:134:in `from_webfinger_profile'
+  app/models/person.rb:123:in `by_webfinger'
+  app/helpers/requests_helper.rb:34:in `relationship_flow'
+  app/controllers/requests_controller.rb:36:in `create'
+  lib/mongo_mapper/clear_dev_memory.rb:20:in `call'
+
+
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1492.7ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1598.3ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:46:47 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.5ms)
+Rendered shared/_invitations.haml (12.7ms)
+Rendered shared/_aspect_friends.haml (21.6ms)
+Rendered aspects/_no_friends_message.haml (4.1ms)
+Rendered shared/_public_explain.haml (6.2ms)
+Rendered shared/_publisher.haml (19.3ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered shared/_reshare.haml (15.2ms)
+Rendered comments/_new_comment.html.haml (5.7ms)
+Rendered comments/_comments.html.haml (10.3ms)
+Rendered status_messages/_status_message.html.haml (45.5ms)
+Rendered js/_websocket_js.haml (8.3ms)
+Rendered aspects/_new_aspect.haml (6.4ms)
+Rendered shared/_aspect_nav.haml (18.0ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/index.html.haml within layouts/application (268.8ms)
+Completed 200 OK in 697ms (Views: 274.1ms)
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started POST "/status_messages" for 127.0.0.1 at Wed Nov 03 17:46:55 -0700 2010
+  Processing by StatusMessagesController#create as JS
+  Parameters: {"authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "status_message"=>{"public"=>"false", "to"=>"all", "message"=>"hi"}}
+Rendered shared/_reshare.haml (37.8ms)
+Rendered comments/_new_comment.html.haml (5.4ms)
+Rendered comments/_comments.html.haml (11.9ms)
+Rendered status_messages/_status_message.html.haml (69.9ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 858ms (Views: 17.4ms)
+Websocketing to 4cc928897f125d0c4f000005
+
+
+Started GET "/aspects/4cc928897f125d0c4f000007" for 127.0.0.1 at Wed Nov 03 17:47:05 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000007"}
+Rendered shared/_add_friend_dropdown.html.haml (3.1ms)
+Rendered requests/_new_request.haml (12.4ms)
+Rendered invitations/_new.haml (8.3ms)
+Rendered shared/_invitations.haml (11.6ms)
+Rendered shared/_aspect_friends.haml (34.6ms)
+Rendered aspects/_no_friends_message.haml (4.4ms)
+Rendered shared/_publisher.haml (12.4ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered shared/_reshare.haml (7.8ms)
+Rendered comments/_new_comment.html.haml (6.0ms)
+Rendered comments/_comments.html.haml (10.9ms)
+Rendered status_messages/_status_message.html.haml (41.6ms)
+Rendered shared/_reshare.haml (17.9ms)
+Rendered comments/_new_comment.html.haml (5.5ms)
+Rendered comments/_comments.html.haml (10.2ms)
+Rendered status_messages/_status_message.html.haml (49.0ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (15.2ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/show.html.haml within layouts/application (316.1ms)
+Completed 200 OK in 759ms (Views: 326.8ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/4cc928897f125d0c4f000007
+
+
+Started GET "/aspects/4cc928b37f125d0c4f00000e" for 127.0.0.1 at Wed Nov 03 17:47:08 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc928b37f125d0c4f00000e"}
+Rendered shared/_add_friend_dropdown.html.haml (3.1ms)
+Rendered requests/_new_request.haml (12.6ms)
+Rendered invitations/_new.haml (122.3ms)
+Rendered shared/_invitations.haml (125.8ms)
+Rendered shared/_aspect_friends.haml (148.6ms)
+Rendered aspects/_no_friends_message.haml (4.6ms)
+Rendered shared/_publisher.haml (13.2ms)
+Rendered aspects/_no_posts_message.haml (2.7ms)
+Rendered shared/_reshare.haml (8.3ms)
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (11.0ms)
+Rendered status_messages/_status_message.html.haml (42.7ms)
+Rendered shared/_reshare.haml (40.0ms)
+Rendered comments/_new_comment.html.haml (5.4ms)
+Rendered comments/_comments.html.haml (9.8ms)
+Rendered status_messages/_status_message.html.haml (70.5ms)
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/show.html.haml within layouts/application (346.6ms)
+Completed 200 OK in 787ms (Views: 352.0ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+
+
+Started GET "/aspects/4cc92f227f125d0e36000011" for 127.0.0.1 at Wed Nov 03 17:47:09 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cc92f227f125d0e36000011"}
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/4cc928b37f125d0c4f00000e
+Rendered shared/_add_friend_dropdown.html.haml (3.7ms)
+Rendered requests/_new_request.haml (14.0ms)
+Rendered invitations/_new.haml (8.6ms)
+Rendered shared/_invitations.haml (12.1ms)
+Rendered shared/_aspect_friends.haml (37.1ms)
+Rendered aspects/_no_friends_message.haml (4.1ms)
+Rendered shared/_publisher.haml (12.3ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered shared/_reshare.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (10.5ms)
+Rendered status_messages/_status_message.html.haml (40.8ms)
+Rendered shared/_reshare.haml (45.0ms)
+Rendered comments/_new_comment.html.haml (6.2ms)
+Rendered comments/_comments.html.haml (11.1ms)
+Rendered status_messages/_status_message.html.haml (77.7ms)
+Rendered js/_websocket_js.haml (124.8ms)
+Rendered aspects/_new_aspect.haml (6.4ms)
+Rendered shared/_aspect_nav.haml (19.0ms)
+Rendered posts/_debug.haml (4.1ms)
+Rendered aspects/show.html.haml within layouts/application (362.1ms)
+Completed 200 OK in 786ms (Views: 367.7ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/4cc92f227f125d0e36000011
+
+
+Started POST "/aspects" for 127.0.0.1 at Wed Nov 03 17:47:20 -0700 2010
+  Processing by AspectsController#create as HTML
+  Parameters: {"commit"=>"Create", "aspect"=>{"name"=>"wet"}, "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓"}
+Redirected to http://localhost:3000/aspects/4cd202987f125d090f000027
+Completed 302 Found in 394ms
+
+
+Started GET "/aspects/4cd202987f125d090f000027" for 127.0.0.1 at Wed Nov 03 17:47:20 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cd202987f125d090f000027"}
+Rendered shared/_add_friend_dropdown.html.haml (3.5ms)
+Rendered requests/_new_request.haml (13.9ms)
+Rendered invitations/_new.haml (8.7ms)
+Rendered shared/_invitations.haml (12.2ms)
+Rendered shared/_aspect_friends.haml (37.2ms)
+Rendered aspects/_no_friends_message.haml (4.1ms)
+Rendered shared/_publisher.haml (50.4ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/show.html.haml within layouts/application (156.8ms)
+Completed 200 OK in 538ms (Views: 162.5ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/4cd202987f125d090f000027
+
+
+Started POST "/status_messages" for 127.0.0.1 at Wed Nov 03 17:47:31 -0700 2010
+  Processing by StatusMessagesController#create as JS
+  Parameters: {"authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "status_message"=>{"to"=>"4cd202987f125d090f000027", "message"=>"hello"}}
+Rendered shared/_reshare.haml (149.9ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (12.8ms)
+Rendered status_messages/_status_message.html.haml (182.0ms)
+Websocketing to 4cc928897f125d0c4f000005
+Rendered text template (0.0ms)
+Completed 200 OK in 939ms (Views: 1.1ms)
+
+
+Started GET "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Wed Nov 03 17:47:36 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered shared/_reshare.haml (21.1ms)
+Rendered comments/_new_comment.html.haml (5.6ms)
+Rendered comments/_comments.html.haml (10.1ms)
+Rendered status_messages/_status_message.html.haml (48.8ms)
+Rendered shared/_reshare.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (5.5ms)
+Rendered comments/_comments.html.haml (10.1ms)
+Rendered status_messages/_status_message.html.haml (38.9ms)
+Rendered shared/_reshare.haml (8.0ms)
+Rendered comments/_new_comment.html.haml (6.3ms)
+Rendered comments/_comments.html.haml (121.0ms)
+Rendered status_messages/_status_message.html.haml (148.1ms)
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (17.1ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered people/show.html.haml within layouts/application (308.3ms)
+Completed 200 OK in 762ms (Views: 319.8ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /people/4cc928897f125d0c4f000006
+
+
+Started POST "/comments" for 127.0.0.1 at Wed Nov 03 17:47:50 -0700 2010
+  Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"post_id"=>"4cd202a37f125d090f00002c", "text"=>"good"}, "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓"}
+Signing good;4cd202a37f125d090f00002c;4cd202b77f125d090f000032
+Signing good;4cd202a37f125d090f00002c;4cd202b77f125d090f000032
+Rendered comments/_comment.html.haml (5.0ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 1398ms (Views: 1.0ms)
+Websocketing to 4cc928897f125d0c4f000005
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Wed Nov 03 17:48:01 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (8.7ms)
+Rendered shared/_invitations.haml (11.9ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered requests/_new_request.haml (7.7ms)
+Rendered requests/_new_request.haml (7.5ms)
+Rendered requests/_new_request.haml (7.7ms)
+Rendered requests/_new_request.haml (7.6ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (15.5ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/manage.html.haml within layouts/application (246.1ms)
+Completed 200 OK in 631ms (Views: 253.7ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/manage
+
+
+Started POST "/aspects/4cd202987f125d090f000027" for 127.0.0.1 at Wed Nov 03 17:48:14 -0700 2010
+  Processing by AspectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "id"=>"4cd202987f125d090f000027"}
+Redirected to http://localhost:3000/aspects/manage
+Completed 302 Found in 382ms
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Wed Nov 03 17:48:14 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (8.1ms)
+Rendered shared/_invitations.haml (11.2ms)
+Rendered requests/_new_request.haml (9.3ms)
+Rendered requests/_new_request.haml (8.7ms)
+Rendered requests/_new_request.haml (9.0ms)
+Rendered requests/_new_request.haml (8.6ms)
+Rendered js/_websocket_js.haml (8.9ms)
+Rendered aspects/_new_aspect.haml (6.5ms)
+Rendered shared/_aspect_nav.haml (16.7ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered aspects/manage.html.haml within layouts/application (250.5ms)
+Completed 200 OK in 520ms (Views: 255.8ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/manage
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:48:23 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (8.8ms)
+Rendered shared/_invitations.haml (12.3ms)
+Rendered shared/_aspect_friends.haml (20.9ms)
+Rendered aspects/_no_friends_message.haml (4.0ms)
+Rendered shared/_public_explain.haml (5.9ms)
+Rendered shared/_publisher.haml (18.2ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered shared/_reshare.haml (17.4ms)
+Rendered comments/_comment.html.haml (124.3ms)
+Rendered comments/_new_comment.html.haml (7.4ms)
+Rendered comments/_comments.html.haml (138.4ms)
+Rendered status_messages/_status_message.html.haml (171.4ms)
+Rendered shared/_reshare.haml (7.9ms)
+Rendered comments/_new_comment.html.haml (6.4ms)
+Rendered comments/_comments.html.haml (11.3ms)
+Rendered status_messages/_status_message.html.haml (42.8ms)
+Rendered shared/_reshare.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (5.9ms)
+Rendered comments/_comments.html.haml (10.9ms)
+Rendered status_messages/_status_message.html.haml (40.1ms)
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.6ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered aspects/index.html.haml within layouts/application (367.7ms)
+Completed 200 OK in 809ms (Views: 373.0ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/albums?aspect=all" for 127.0.0.1 at Wed Nov 03 17:48:28 -0700 2010
+  Processing by AlbumsController#index as HTML
+  Parameters: {"aspect"=>"all"}
+Rendered invitations/_new.haml (9.3ms)
+Rendered shared/_invitations.haml (12.5ms)
+Rendered shared/_aspect_friends.haml (21.3ms)
+Rendered shared/_publisher.haml (12.7ms)
+Rendered albums/_album.html.haml (8.7ms)
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (17.6ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered albums/index.html.haml within layouts/application (214.6ms)
+Completed 200 OK in 657ms (Views: 220.7ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /albums
+
+
+Started GET "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Wed Nov 03 17:48:31 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered shared/_reshare.haml (18.9ms)
+Rendered comments/_comment.html.haml (7.6ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (20.8ms)
+Rendered status_messages/_status_message.html.haml (56.6ms)
+Rendered shared/_reshare.haml (8.0ms)
+Rendered comments/_new_comment.html.haml (5.6ms)
+Rendered comments/_comments.html.haml (10.0ms)
+Rendered status_messages/_status_message.html.haml (39.9ms)
+Rendered shared/_reshare.haml (7.8ms)
+Rendered comments/_new_comment.html.haml (119.2ms)
+Rendered comments/_comments.html.haml (123.9ms)
+Rendered status_messages/_status_message.html.haml (151.2ms)
+Rendered js/_websocket_js.haml (9.3ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (17.3ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered people/show.html.haml within layouts/application (321.9ms)
+Completed 200 OK in 762ms (Views: 327.6ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /people/4cc928897f125d0c4f000006
+
+
+Started GET "/people/4cc928897f125d0c4f000006" for 127.0.0.1 at Wed Nov 03 17:48:37 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered shared/_reshare.haml (18.6ms)
+Rendered comments/_comment.html.haml (6.8ms)
+Rendered comments/_new_comment.html.haml (5.5ms)
+Rendered comments/_comments.html.haml (18.7ms)
+Rendered status_messages/_status_message.html.haml (53.3ms)
+Rendered shared/_reshare.haml (7.2ms)
+Rendered comments/_new_comment.html.haml (5.2ms)
+Rendered comments/_comments.html.haml (9.6ms)
+Rendered status_messages/_status_message.html.haml (37.9ms)
+Rendered shared/_reshare.haml (119.8ms)
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (11.7ms)
+Rendered status_messages/_status_message.html.haml (151.2ms)
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.7ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered people/show.html.haml within layouts/application (314.8ms)
+Completed 200 OK in 767ms (Views: 320.3ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /people/4cc928897f125d0c4f000006
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:48:44 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.0ms)
+Rendered shared/_invitations.haml (12.3ms)
+Rendered shared/_aspect_friends.haml (21.7ms)
+Rendered aspects/_no_friends_message.haml (4.3ms)
+Rendered shared/_public_explain.haml (6.4ms)
+Rendered shared/_publisher.haml (19.7ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered shared/_reshare.haml (18.3ms)
+Rendered comments/_comment.html.haml (6.9ms)
+Rendered comments/_new_comment.html.haml (5.6ms)
+Rendered comments/_comments.html.haml (19.4ms)
+Rendered status_messages/_status_message.html.haml (54.0ms)
+Rendered shared/_reshare.haml (8.4ms)
+Rendered comments/_new_comment.html.haml (6.4ms)
+Rendered comments/_comments.html.haml (11.3ms)
+Rendered status_messages/_status_message.html.haml (155.7ms)
+Rendered shared/_reshare.haml (7.9ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (11.0ms)
+Rendered status_messages/_status_message.html.haml (39.8ms)
+Rendered js/_websocket_js.haml (8.8ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.7ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/index.html.haml within layouts/application (364.9ms)
+Completed 200 OK in 825ms (Views: 370.6ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/albums?aspect=all" for 127.0.0.1 at Wed Nov 03 17:48:47 -0700 2010
+  Processing by AlbumsController#index as HTML
+  Parameters: {"aspect"=>"all"}
+Rendered invitations/_new.haml (8.8ms)
+Rendered shared/_invitations.haml (12.2ms)
+Rendered shared/_aspect_friends.haml (21.3ms)
+Rendered shared/_publisher.haml (12.4ms)
+Rendered albums/_album.html.haml (9.5ms)
+Rendered js/_websocket_js.haml (8.3ms)
+Rendered aspects/_new_aspect.haml (6.5ms)
+Rendered shared/_aspect_nav.haml (20.5ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered albums/index.html.haml within layouts/application (220.0ms)
+Completed 200 OK in 673ms (Views: 225.3ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /albums
+
+
+Started POST "/albums" for 127.0.0.1 at Wed Nov 03 17:48:56 -0700 2010
+  Processing by AlbumsController#create as HTML
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "album"=>{"name"=>"wet", "to"=>"all"}}
+Rendered albums/_album.html.haml (9.0ms)
+Websocketing to 4cc928897f125d0c4f000005
+Redirected to http://localhost:3000/albums/4cd202f97f125d090f00005a?aspect=all
+Completed 302 Found in 798ms
+
+
+Started GET "/albums/4cd202f97f125d090f00005a?aspect=all" for 127.0.0.1 at Wed Nov 03 17:48:57 -0700 2010
+  Processing by AlbumsController#show as HTML
+  Parameters: {"aspect"=>"all", "id"=>"4cd202f97f125d090f00005a"}
+Rendered shared/_author_info.html.haml (13.9ms)
+Rendered photos/_new_photo.haml (2.5ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.5ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered albums/show.html.haml within layouts/application (81.7ms)
+Completed 200 OK in 524ms (Views: 87.4ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /albums/4cd202f97f125d090f00005a
+
+
+Started POST "/photos?qqfile=facebook_logo.jpg&album_id=4cd202f97f125d090f00005a" for 127.0.0.1 at Wed Nov 03 17:50:21 -0700 2010
+  Processing by PhotosController#create as HTML
+  Parameters: {"qqfile"=>"facebook_logo.jpg", "album_id"=>"4cd202f97f125d090f00005a"}
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (13.4ms)
+Rendered photos/_photo.haml (35.6ms)
+Websocketing to 4cc928897f125d0c4f000005
+Completed 200 OK in 2880ms (Views: 0.2ms)
+
+
+Started GET "/photos/4cd2034e7f125d090f00005d" for 127.0.0.1 at Wed Nov 03 17:50:27 -0700 2010
+  Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4cd2034e7f125d090f00005d"}
+Rendered shared/_author_info.html.haml (14.8ms)
+Rendered comments/_new_comment.html.haml (6.0ms)
+Rendered comments/_comments.html.haml (10.9ms)
+Rendered js/_websocket_js.haml (8.9ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered photos/show.html.haml within layouts/application (245.8ms)
+Completed 200 OK in 559ms (Views: 251.7ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /photos/4cd2034e7f125d090f00005d
+
+
+Started POST "/comments" for 127.0.0.1 at Wed Nov 03 17:50:35 -0700 2010
+  Processing by CommentsController#create as JS
+  Parameters: {"comment"=>{"post_id"=>"4cd2034e7f125d090f00005d", "text"=>"sadsad"}, "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓"}
+Signing sadsad;4cd2034e7f125d090f00005d;4cd2035b7f125d090f000061
+Signing sadsad;4cd2034e7f125d090f00005d;4cd2035b7f125d090f000061
+Rendered comments/_comment.html.haml (4.6ms)
+Rendered text template (0.0ms)
+Completed 200 OK in 1423ms (Views: 1.0ms)
+Websocketing to 4cc928897f125d0c4f000005
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:50:55 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (116.5ms)
+Rendered shared/_invitations.haml (119.9ms)
+Rendered shared/_aspect_friends.haml (128.3ms)
+Rendered aspects/_no_friends_message.haml (5.2ms)
+Rendered shared/_public_explain.haml (6.7ms)
+Rendered shared/_publisher.haml (21.0ms)
+Rendered aspects/_no_posts_message.haml (2.4ms)
+Rendered comments/_comment.html.haml (7.4ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (20.3ms)
+Rendered photos/_photo.haml (47.8ms)
+Rendered shared/_reshare.haml (26.0ms)
+Rendered comments/_comment.html.haml (6.9ms)
+Rendered comments/_new_comment.html.haml (5.2ms)
+Rendered comments/_comments.html.haml (18.8ms)
+Rendered status_messages/_status_message.html.haml (61.2ms)
+Rendered shared/_reshare.haml (7.4ms)
+Rendered comments/_new_comment.html.haml (5.2ms)
+Rendered comments/_comments.html.haml (9.6ms)
+Rendered status_messages/_status_message.html.haml (37.9ms)
+Rendered shared/_reshare.haml (7.5ms)
+Rendered comments/_new_comment.html.haml (123.5ms)
+Rendered comments/_comments.html.haml (128.2ms)
+Rendered status_messages/_status_message.html.haml (154.8ms)
+Rendered js/_websocket_js.haml (9.7ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (16.6ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/index.html.haml within layouts/application (531.0ms)
+Completed 200 OK in 967ms (Views: 536.2ms)
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Wed Nov 03 17:51:01 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (9.3ms)
+Rendered shared/_invitations.haml (12.7ms)
+Rendered requests/_new_request.haml (8.5ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered js/_websocket_js.haml (8.4ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (15.8ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered aspects/manage.html.haml within layouts/application (135.9ms)
+Completed 200 OK in 532ms (Views: 141.5ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/manage
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:51:07 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (8.5ms)
+Rendered shared/_invitations.haml (12.1ms)
+Rendered shared/_aspect_friends.haml (20.5ms)
+Rendered aspects/_no_friends_message.haml (114.9ms)
+Rendered shared/_public_explain.haml (6.9ms)
+Rendered shared/_publisher.haml (21.7ms)
+Rendered aspects/_no_posts_message.haml (2.4ms)
+Rendered comments/_comment.html.haml (7.4ms)
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (20.5ms)
+Rendered photos/_photo.haml (48.1ms)
+Rendered shared/_reshare.haml (25.9ms)
+Rendered comments/_comment.html.haml (7.0ms)
+Rendered comments/_new_comment.html.haml (5.3ms)
+Rendered comments/_comments.html.haml (19.1ms)
+Rendered status_messages/_status_message.html.haml (62.8ms)
+Rendered shared/_reshare.haml (7.4ms)
+Rendered comments/_new_comment.html.haml (5.3ms)
+Rendered comments/_comments.html.haml (9.8ms)
+Rendered status_messages/_status_message.html.haml (38.6ms)
+Rendered shared/_reshare.haml (7.8ms)
+Rendered comments/_new_comment.html.haml (5.4ms)
+Rendered comments/_comments.html.haml (9.8ms)
+Rendered status_messages/_status_message.html.haml (37.2ms)
+Rendered js/_websocket_js.haml (10.7ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (16.7ms)
+Rendered posts/_debug.haml (4.1ms)
+Rendered aspects/index.html.haml within layouts/application (539.4ms)
+Completed 200 OK in 982ms (Views: 544.7ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/aspects" for 127.0.0.1 at Wed Nov 03 17:51:15 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.3ms)
+Rendered shared/_invitations.haml (12.6ms)
+Rendered shared/_aspect_friends.haml (21.7ms)
+Rendered aspects/_no_friends_message.haml (4.2ms)
+Rendered shared/_public_explain.haml (5.9ms)
+Rendered shared/_publisher.haml (18.7ms)
+Rendered aspects/_no_posts_message.haml (2.1ms)
+Rendered comments/_comment.html.haml (6.8ms)
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (19.6ms)
+Rendered photos/_photo.haml (45.5ms)
+Rendered shared/_reshare.haml (141.2ms)
+Rendered comments/_comment.html.haml (8.5ms)
+Rendered comments/_new_comment.html.haml (5.9ms)
+Rendered comments/_comments.html.haml (21.9ms)
+Rendered status_messages/_status_message.html.haml (178.6ms)
+Rendered shared/_reshare.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (5.9ms)
+Rendered comments/_comments.html.haml (10.7ms)
+Rendered status_messages/_status_message.html.haml (41.2ms)
+Rendered shared/_reshare.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (5.6ms)
+Rendered comments/_comments.html.haml (10.4ms)
+Rendered status_messages/_status_message.html.haml (39.0ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.7ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/index.html.haml within layouts/application (419.0ms)
+Completed 200 OK in 880ms (Views: 424.5ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:51:40 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (117.7ms)
+Rendered shared/_invitations.haml (120.9ms)
+Rendered shared/_aspect_friends.haml (129.3ms)
+Rendered aspects/_no_friends_message.haml (5.0ms)
+Rendered shared/_public_explain.haml (6.8ms)
+Rendered shared/_publisher.haml (21.1ms)
+Rendered aspects/_no_posts_message.haml (2.4ms)
+Rendered comments/_comment.html.haml (7.2ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (20.6ms)
+Rendered photos/_photo.haml (47.6ms)
+Rendered shared/_reshare.haml (26.4ms)
+Rendered comments/_comment.html.haml (7.0ms)
+Rendered comments/_new_comment.html.haml (5.2ms)
+Rendered comments/_comments.html.haml (19.0ms)
+Rendered status_messages/_status_message.html.haml (62.1ms)
+Rendered shared/_reshare.haml (7.4ms)
+Rendered comments/_new_comment.html.haml (5.2ms)
+Rendered comments/_comments.html.haml (9.6ms)
+Rendered status_messages/_status_message.html.haml (38.3ms)
+Rendered shared/_reshare.haml (7.5ms)
+Rendered comments/_new_comment.html.haml (123.8ms)
+Rendered comments/_comments.html.haml (128.4ms)
+Rendered status_messages/_status_message.html.haml (155.3ms)
+Rendered js/_websocket_js.haml (9.3ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.6ms)
+Rendered posts/_debug.haml (4.2ms)
+Rendered aspects/index.html.haml within layouts/application (535.0ms)
+Completed 200 OK in 994ms (Views: 540.3ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Wed Nov 03 17:51:47 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (9.3ms)
+Rendered shared/_invitations.haml (13.1ms)
+Rendered requests/_new_request.haml (8.4ms)
+Rendered requests/_new_request.haml (8.6ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered requests/_new_request.haml (8.0ms)
+Rendered js/_websocket_js.haml (8.4ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/manage.html.haml within layouts/application (136.1ms)
+Completed 200 OK in 536ms (Views: 141.7ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/manage
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Wed Nov 03 17:51:52 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (8.4ms)
+Rendered shared/_invitations.haml (11.6ms)
+Rendered requests/_new_request.haml (7.8ms)
+Rendered requests/_new_request.haml (7.6ms)
+Rendered requests/_new_request.haml (7.6ms)
+Rendered requests/_new_request.haml (7.7ms)
+Rendered js/_websocket_js.haml (120.8ms)
+Rendered aspects/_new_aspect.haml (6.5ms)
+Rendered shared/_aspect_nav.haml (17.3ms)
+Rendered posts/_debug.haml (4.3ms)
+Rendered aspects/manage.html.haml within layouts/application (244.8ms)
+Completed 200 OK in 634ms (Views: 250.4ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/manage
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:52:02 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.4ms)
+Rendered shared/_invitations.haml (12.8ms)
+Rendered shared/_aspect_friends.haml (22.6ms)
+Rendered aspects/_no_friends_message.haml (4.4ms)
+Rendered shared/_public_explain.haml (5.9ms)
+Rendered shared/_publisher.haml (19.2ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered comments/_comment.html.haml (7.1ms)
+Rendered comments/_new_comment.html.haml (5.7ms)
+Rendered comments/_comments.html.haml (19.6ms)
+Rendered photos/_photo.haml (45.8ms)
+Rendered shared/_reshare.haml (27.0ms)
+Rendered comments/_comment.html.haml (128.8ms)
+Rendered comments/_new_comment.html.haml (6.5ms)
+Rendered comments/_comments.html.haml (142.1ms)
+Rendered status_messages/_status_message.html.haml (184.2ms)
+Rendered shared/_reshare.haml (8.3ms)
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (11.0ms)
+Rendered status_messages/_status_message.html.haml (42.3ms)
+Rendered shared/_reshare.haml (8.2ms)
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (11.1ms)
+Rendered status_messages/_status_message.html.haml (40.7ms)
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (16.5ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered aspects/index.html.haml within layouts/application (431.9ms)
+Completed 200 OK in 892ms (Views: 437.5ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/users/4cc928897f125d0c4f000005/edit" for 127.0.0.1 at Wed Nov 03 17:52:11 -0700 2010
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000005"}
+Rendered js/_websocket_js.haml (8.3ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered users/edit.html.haml within layouts/application (73.5ms)
+Completed 200 OK in 492ms (Views: 91.3ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /users/4cc928897f125d0c4f000005/edit
+
+
+Started GET "/people/4cc928897f125d0c4f000006/edit" for 127.0.0.1 at Wed Nov 03 17:52:15 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000006"}
+Rendered js/_websocket_js.haml (9.2ms)
+Rendered aspects/_new_aspect.haml (6.6ms)
+Rendered shared/_aspect_nav.haml (17.2ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered people/edit.html.haml within layouts/application (90.6ms)
+Completed 200 OK in 533ms (Views: 97.0ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /people/4cc928897f125d0c4f000006/edit
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 17:52:20 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (17.0ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered services/index.html.haml within layouts/application (67.9ms)
+Completed 200 OK in 479ms (Views: 73.5ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /services
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at Wed Nov 03 17:52:22 -0700 2010
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 17:53:01 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.4ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (15.4ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered services/index.html.haml within layouts/application (64.0ms)
+Completed 200 OK in 456ms (Views: 69.5ms)
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /services
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at Wed Nov 03 17:53:34 -0700 2010
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:56:08 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (121.4ms)
+Rendered shared/_invitations.haml (124.6ms)
+Rendered shared/_aspect_friends.haml (133.1ms)
+Rendered aspects/_no_friends_message.haml (5.2ms)
+Rendered shared/_public_explain.haml (6.5ms)
+Rendered shared/_publisher.haml (20.3ms)
+Rendered aspects/_no_posts_message.haml (2.4ms)
+Rendered comments/_comment.html.haml (7.3ms)
+Rendered comments/_new_comment.html.haml (6.3ms)
+Rendered comments/_comments.html.haml (20.5ms)
+Rendered photos/_photo.haml (49.2ms)
+Rendered shared/_reshare.haml (27.2ms)
+Rendered comments/_comment.html.haml (7.0ms)
+Rendered comments/_new_comment.html.haml (5.3ms)
+Rendered comments/_comments.html.haml (18.9ms)
+Rendered status_messages/_status_message.html.haml (62.2ms)
+Rendered shared/_reshare.haml (7.3ms)
+Rendered comments/_new_comment.html.haml (5.6ms)
+Rendered comments/_comments.html.haml (10.0ms)
+Rendered status_messages/_status_message.html.haml (38.4ms)
+Rendered shared/_reshare.haml (7.4ms)
+Rendered comments/_new_comment.html.haml (9.2ms)
+Rendered comments/_comments.html.haml (142.5ms)
+Rendered status_messages/_status_message.html.haml (169.1ms)
+Rendered js/_websocket_js.haml (9.5ms)
+Rendered aspects/_new_aspect.haml (6.8ms)
+Rendered shared/_aspect_nav.haml (17.8ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered aspects/index.html.haml within layouts/application (553.9ms)
+Completed 200 OK in 882ms (Views: 559.2ms)
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/photos/4cd2034e7f125d090f00005d" for 127.0.0.1 at Wed Nov 03 17:56:18 -0700 2010
+  Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4cd2034e7f125d090f00005d"}
+Rendered shared/_author_info.html.haml (13.5ms)
+Rendered comments/_comment.html.haml (7.1ms)
+Rendered comments/_new_comment.html.haml (5.4ms)
+Rendered comments/_comments.html.haml (19.1ms)
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered photos/show.html.haml within layouts/application (137.3ms)
+Completed 200 OK in 594ms (Views: 142.7ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /photos/4cd2034e7f125d090f00005d
+
+
+Started PUT "/people/4cc928897f125d0c4f000005" for 127.0.0.1 at Wed Nov 03 17:56:22 -0700 2010
+  Processing by PeopleController#update as */*
+  Parameters: {"person"=>{"profile"=>{"image_url"=>"/uploads/images/thumb_medium_4cd2034e7f125d090f00005d.jpg"}}, "id"=>"4cc928897f125d0c4f000005"}
+Redirected to http://localhost:3000/people/4cc928897f125d0c4f000005/edit
+Completed 302 Found in 685ms
+
+
+Started GET "/people/4cc928897f125d0c4f000005/edit" for 127.0.0.1 at Wed Nov 03 17:56:23 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000005"}
+Rendered js/_websocket_js.haml (9.0ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (16.2ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered people/edit.html.haml within layouts/application (85.7ms)
+Completed 200 OK in 510ms (Views: 91.3ms)
+
+
+Started PUT "/people/4cc928897f125d0c4f000005" for 127.0.0.1 at Wed Nov 03 17:56:24 -0700 2010
+  Processing by PeopleController#update as */*
+  Parameters: {"person"=>{"profile"=>{"image_url"=>"/uploads/images/thumb_medium_4cd2034e7f125d090f00005d.jpg"}}, "id"=>"4cc928897f125d0c4f000005"}
+Redirected to http://localhost:3000/people/4cc928897f125d0c4f000005/edit
+Completed 302 Found in 737ms
+
+
+Started GET "/people/4cc928897f125d0c4f000005/edit" for 127.0.0.1 at Wed Nov 03 17:56:25 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cc928897f125d0c4f000005"}
+Rendered js/_websocket_js.haml (8.8ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (16.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered people/edit.html.haml within layouts/application (86.2ms)
+Completed 200 OK in 539ms (Views: 92.1ms)
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Wed Nov 03 17:57:20 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (8.7ms)
+Rendered shared/_invitations.haml (12.0ms)
+Rendered requests/_new_request.haml (8.5ms)
+Rendered requests/_new_request.haml (8.5ms)
+Rendered requests/_new_request.haml (8.1ms)
+Rendered requests/_new_request.haml (7.9ms)
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (6.6ms)
+Rendered shared/_aspect_nav.haml (129.3ms)
+Rendered posts/_debug.haml (4.1ms)
+Rendered aspects/manage.html.haml within layouts/application (247.5ms)
+Completed 200 OK in 657ms (Views: 253.1ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/manage
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:57:26 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.5ms)
+Rendered shared/_invitations.haml (13.0ms)
+Rendered shared/_aspect_friends.haml (22.5ms)
+Rendered aspects/_no_friends_message.haml (4.4ms)
+Rendered shared/_public_explain.haml (6.0ms)
+Rendered shared/_publisher.haml (19.5ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered comments/_comment.html.haml (6.9ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (19.3ms)
+Rendered photos/_photo.haml (45.4ms)
+Rendered shared/_reshare.haml (26.7ms)
+Rendered comments/_comment.html.haml (6.7ms)
+Rendered comments/_new_comment.html.haml (123.6ms)
+Rendered comments/_comments.html.haml (136.6ms)
+Rendered status_messages/_status_message.html.haml (178.2ms)
+Rendered shared/_reshare.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (5.9ms)
+Rendered comments/_comments.html.haml (10.8ms)
+Rendered status_messages/_status_message.html.haml (42.0ms)
+Rendered shared/_reshare.haml (7.9ms)
+Rendered comments/_new_comment.html.haml (5.6ms)
+Rendered comments/_comments.html.haml (10.3ms)
+Rendered status_messages/_status_message.html.haml (39.4ms)
+Rendered js/_websocket_js.haml (8.4ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (16.4ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/index.html.haml within layouts/application (423.2ms)
+Completed 200 OK in 872ms (Views: 429.1ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/people?utf8=%E2%9C%93&q=sadsadsa" for 127.0.0.1 at Wed Nov 03 17:57:33 -0700 2010
+  Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"sadsadsa"}
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered people/index.html.haml within layouts/application (57.3ms)
+Completed 200 OK in 464ms (Views: 63.3ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /people
+
+
+Started GET "/people?utf8=%E2%9C%93&q=facebook" for 127.0.0.1 at Wed Nov 03 17:57:40 -0700 2010
+  Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"facebook"}
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (15.3ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered people/index.html.haml within layouts/application (56.1ms)
+Completed 200 OK in 330ms (Views: 61.4ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /people
+
+
+Started GET "/people?utf8=%E2%9C%93&q=hello" for 127.0.0.1 at Wed Nov 03 17:57:47 -0700 2010
+  Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"hello"}
+Rendered js/_websocket_js.haml (9.7ms)
+Rendered aspects/_new_aspect.haml (6.8ms)
+Rendered shared/_aspect_nav.haml (18.0ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered people/index.html.haml within layouts/application (172.8ms)
+Completed 200 OK in 453ms (Views: 178.1ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /people
+
+
+Started GET "/people?utf8=%E2%9C%93&q=wet" for 127.0.0.1 at Wed Nov 03 17:57:54 -0700 2010
+  Processing by PeopleController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"wet"}
+Rendered js/_websocket_js.haml (9.4ms)
+Rendered aspects/_new_aspect.haml (6.4ms)
+Rendered shared/_aspect_nav.haml (17.0ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered people/index.html.haml within layouts/application (62.4ms)
+Completed 200 OK in 466ms (Views: 68.1ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /people
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:58:01 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (9.0ms)
+Rendered shared/_invitations.haml (12.5ms)
+Rendered shared/_aspect_friends.haml (21.1ms)
+Rendered aspects/_no_friends_message.haml (4.5ms)
+Rendered shared/_public_explain.haml (5.9ms)
+Rendered shared/_publisher.haml (18.4ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered comments/_comment.html.haml (6.8ms)
+Rendered comments/_new_comment.html.haml (6.0ms)
+Rendered comments/_comments.html.haml (19.4ms)
+Rendered photos/_photo.haml (45.1ms)
+Rendered shared/_reshare.haml (154.7ms)
+Rendered comments/_comment.html.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (21.4ms)
+Rendered status_messages/_status_message.html.haml (191.9ms)
+Rendered shared/_reshare.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (5.8ms)
+Rendered comments/_comments.html.haml (10.8ms)
+Rendered status_messages/_status_message.html.haml (41.8ms)
+Rendered shared/_reshare.haml (8.1ms)
+Rendered comments/_new_comment.html.haml (6.1ms)
+Rendered comments/_comments.html.haml (11.0ms)
+Rendered status_messages/_status_message.html.haml (40.3ms)
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/index.html.haml within layouts/application (434.1ms)
+Completed 200 OK in 899ms (Views: 439.5ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started GET "/aspects/manage" for 127.0.0.1 at Wed Nov 03 17:58:15 -0700 2010
+  Processing by AspectsController#manage as HTML
+Rendered invitations/_new.haml (8.6ms)
+Rendered shared/_invitations.haml (11.8ms)
+Rendered requests/_new_request.haml (7.9ms)
+Rendered requests/_new_request.haml (8.2ms)
+Rendered requests/_new_request.haml (8.9ms)
+Rendered requests/_new_request.haml (9.2ms)
+Rendered js/_websocket_js.haml (9.0ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.4ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/manage.html.haml within layouts/application (251.0ms)
+Completed 200 OK in 525ms (Views: 256.3ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /aspects/manage
+
+
+Started POST "/requests" for 127.0.0.1 at Wed Nov 03 17:58:25 -0700 2010
+  Processing by RequestsController#create as HTML
+  Parameters: {"commit"=>"Create Request", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "request"=>{"destination_url"=>"shail.saw@gmail.com", "aspect_id"=>"4cc928897f125d0c4f000007"}}
+Webfingering shail.saw@gmail.com
+Completed   in 765ms
+
+NoMethodError (undefined method `href' for nil:NilClass):
+  app/models/person.rb:134:in `from_webfinger_profile'
+  app/models/person.rb:123:in `by_webfinger'
+  app/helpers/requests_helper.rb:34:in `relationship_flow'
+  app/controllers/requests_controller.rb:36:in `create'
+  lib/mongo_mapper/clear_dev_memory.rb:20:in `call'
+
+
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1344.8ms)
+Rendered /home/shailesh_sawant/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1467.9ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:58:36 -0700 2010
+  Processing by AspectsController#index as HTML
+Rendered invitations/_new.haml (10.5ms)
+Rendered shared/_invitations.haml (14.4ms)
+Rendered shared/_aspect_friends.haml (24.3ms)
+Rendered aspects/_no_friends_message.haml (4.7ms)
+Rendered shared/_public_explain.haml (6.2ms)
+Rendered shared/_publisher.haml (20.5ms)
+Rendered aspects/_no_posts_message.haml (2.5ms)
+Rendered comments/_comment.html.haml (7.2ms)
+Rendered comments/_new_comment.html.haml (6.3ms)
+Rendered comments/_comments.html.haml (20.2ms)
+Rendered photos/_photo.haml (47.7ms)
+Rendered shared/_reshare.haml (26.3ms)
+Rendered comments/_comment.html.haml (6.9ms)
+Rendered comments/_new_comment.html.haml (5.2ms)
+Rendered comments/_comments.html.haml (18.7ms)
+Rendered status_messages/_status_message.html.haml (60.7ms)
+Rendered shared/_reshare.haml (7.1ms)
+Rendered comments/_new_comment.html.haml (5.2ms)
+Rendered comments/_comments.html.haml (9.7ms)
+Rendered status_messages/_status_message.html.haml (37.5ms)
+Rendered shared/_reshare.haml (7.7ms)
+Rendered comments/_new_comment.html.haml (6.3ms)
+Rendered comments/_comments.html.haml (10.8ms)
+Rendered status_messages/_status_message.html.haml (38.7ms)
+Rendered js/_websocket_js.haml (8.6ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/index.html.haml within layouts/application (304.9ms)
+Completed 200 OK in 766ms (Views: 311.2ms)
+Subscribing socket to 4cc928897f125d0c4f000005
+Socket received connection to: /
+
+
+Started DELETE "/photos/4cd2034e7f125d090f00005d" for 127.0.0.1 at Wed Nov 03 17:58:44 -0700 2010
+  Processing by PhotosController#destroy as JS
+  Parameters: {"id"=>"4cd2034e7f125d090f00005d"}
+Redirected to http://localhost:3000/albums/4cd202f97f125d090f00005a
+Completed 302 Found in 345ms
+
+
+Started GET "/albums/4cd202f97f125d090f00005a" for 127.0.0.1 at Wed Nov 03 17:58:45 -0700 2010
+  Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4cd202f97f125d090f00005a"}
+Rendered shared/_author_info.html.haml (13.1ms)
+Rendered photos/_new_photo.haml (2.5ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (15.1ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered albums/show.html.haml within layouts/application (79.0ms)
+Completed 200 OK in 526ms (Views: 84.2ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Wed Nov 03 17:58:49 -0700 2010
+  Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 422ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 17:58:49 -0700 2010
+  Processing by AspectsController#index as HTML
+Completed   in 76ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Wed Nov 03 17:58:50 -0700 2010
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.5ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered devise/sessions/new.html.haml within layouts/application (36.0ms)
+Completed 200 OK in 405ms (Views: 42.0ms)
+Unsubscribing socket 1 from 4cc928897f125d0c4f000005
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Wed Nov 03 17:58:56 -0700 2010
+  Processing by RegistrationsController#new as HTML
+Rendered posts/_debug.haml (4.0ms)
+Rendered registrations/new.html.haml within layouts/application (163.5ms)
+Completed 200 OK in 442ms (Views: 180.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Nov 03 17:59:27 -0700 2010
+  Processing by RegistrationsController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"", "password"=>"[FILTERED]", "email"=>"shail.saw@gmail.com"}}
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 17290ms
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Wed Nov 03 17:59:44 -0700 2010
+  Processing by RegistrationsController#new as HTML
+Rendered posts/_debug.haml (3.6ms)
+Rendered registrations/new.html.haml within layouts/application (36.3ms)
+Completed 200 OK in 421ms (Views: 44.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Nov 03 18:00:12 -0700 2010
+  Processing by RegistrationsController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"dhaval", "password"=>"[FILTERED]", "email"=>"dhaval2025@gmail.com"}}
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 11527ms
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Wed Nov 03 18:00:24 -0700 2010
+  Processing by RegistrationsController#new as HTML
+Rendered posts/_debug.haml (3.7ms)
+Rendered registrations/new.html.haml within layouts/application (34.4ms)
+Completed 200 OK in 293ms (Views: 42.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Wed Nov 03 18:00:24 -0700 2010
+  Processing by RegistrationsController#new as HTML
+Rendered posts/_debug.haml (3.6ms)
+Rendered registrations/new.html.haml within layouts/application (35.6ms)
+Completed 200 OK in 423ms (Views: 43.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Nov 03 18:01:12 -0700 2010
+  Processing by RegistrationsController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"shail.saw", "password"=>"[FILTERED]", "email"=>"abcd"}}
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 15054ms
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Wed Nov 03 18:01:28 -0700 2010
+  Processing by RegistrationsController#new as HTML
+Rendered posts/_debug.haml (3.6ms)
+Rendered registrations/new.html.haml within layouts/application (34.7ms)
+Completed 200 OK in 294ms (Views: 42.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at Wed Nov 03 18:02:06 -0700 2010
+  Processing by RegistrationsController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"aditya", "password"=>"[FILTERED]", "email"=>"rockisstone@rediffmail.com"}}
+Redirected to http://localhost:3000/
+Completed 302 Found in 19586ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:02:26 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 384ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:02:26 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (20.1ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (133.4ms)
+Rendered shared/_aspect_nav.haml (142.4ms)
+Rendered posts/_debug.haml (4.3ms)
+Rendered users/getting_started.html.haml within layouts/application (238.2ms)
+Completed 200 OK in 525ms (Views: 250.9ms)
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started POST "/people/4cd206217f125d090f0000df" for 127.0.0.1 at Wed Nov 03 18:02:52 -0700 2010
+  Processing by PeopleController#update as HTML
+  Parameters: {"commit"=>"Save and continue →", "person"=>{"profile"=>{"image_url"=>"", "last_name"=>"rao", "bio"=>"IBM", "first_name"=>"aditya"}}, "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "id"=>"4cd206217f125d090f0000df", "#<ActionView::Helpers::FormBuilder:0xb5d8b480>"=>{"birthday(1i)"=>"2010", "birthday(2i)"=>"11", "birthday(3i)"=>"4"}, "getting_started"=>"1"}
+Redirected to http://localhost:3000/getting_started?step=2
+Completed 302 Found in 578ms
+
+
+Started GET "/getting_started?step=2" for 127.0.0.1 at Wed Nov 03 18:02:53 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"2"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_users_getting_started__step___html_haml__682215932__620480468_492878 at /home/shailesh_sawant/diaspora/app/views/users/getting_started/_step_2.html.haml:13)
+Rendered requests/_new_request.haml (8.8ms)
+Rendered requests/_new_request.haml (8.3ms)
+Rendered users/getting_started/_step_2.html.haml (32.7ms)
+Rendered js/_websocket_js.haml (8.8ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (14.7ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered users/getting_started.html.haml within layouts/application (98.4ms)
+Completed 200 OK in 511ms (Views: 103.9ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started POST "/aspects" for 127.0.0.1 at Wed Nov 03 18:03:07 -0700 2010
+  Processing by AspectsController#create as JS
+  Parameters: {"aspect"=>{"name"=>"roomates"}, "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓"}
+Redirected to http://localhost:3000/aspects/4cd2064b7f125d090f0000e7
+Completed 302 Found in 397ms
+
+
+Started GET "/aspects/4cd2064b7f125d090f0000e7" for 127.0.0.1 at Wed Nov 03 18:03:07 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cd2064b7f125d090f0000e7"}
+Rendered shared/_add_friend_dropdown.html.haml (3.0ms)
+Rendered requests/_new_request.haml (136.6ms)
+Rendered invitations/_new.haml (9.1ms)
+Rendered shared/_invitations.haml (13.0ms)
+Rendered shared/_aspect_friends.haml (168.1ms)
+Rendered aspects/_no_friends_message.haml (4.5ms)
+Rendered shared/_publisher.haml (53.2ms)
+Rendered aspects/_no_posts_message.haml (2.3ms)
+Rendered js/_websocket_js.haml (8.9ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (16.2ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered aspects/show.html.haml within layouts/application (293.0ms)
+Completed 200 OK in 562ms (Views: 298.2ms)
+
+
+Started GET "/getting_started?step=2" for 127.0.0.1 at Wed Nov 03 18:03:08 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"2"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_users_getting_started__step___html_haml__682215932__617425898_492878 at /home/shailesh_sawant/diaspora/app/views/users/getting_started/_step_2.html.haml:13)
+Rendered requests/_new_request.haml (9.2ms)
+Rendered requests/_new_request.haml (9.0ms)
+Rendered requests/_new_request.haml (8.8ms)
+Rendered users/getting_started/_step_2.html.haml (47.4ms)
+Rendered js/_websocket_js.haml (8.6ms)
+Rendered aspects/_new_aspect.haml (5.8ms)
+Rendered shared/_aspect_nav.haml (15.8ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered users/getting_started.html.haml within layouts/application (115.7ms)
+Completed 200 OK in 567ms (Views: 121.5ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started POST "/requests" for 127.0.0.1 at Wed Nov 03 18:03:27 -0700 2010
+  Processing by RequestsController#create as HTML
+  Parameters: {"commit"=>"Create Request", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "request"=>{"destination_url"=>"dhaval patel", "aspect_id"=>"4cd206227f125d090f0000e0"}, "getting_started"=>"2"}
+Redirected to http://localhost:3000/getting_started?step=2
+Completed 302 Found in 434ms
+
+
+Started GET "/getting_started?step=2" for 127.0.0.1 at Wed Nov 03 18:03:28 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"2"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_users_getting_started__step___html_haml__682215932__623610748_492878 at /home/shailesh_sawant/diaspora/app/views/users/getting_started/_step_2.html.haml:13)
+Rendered requests/_new_request.haml (8.3ms)
+Rendered requests/_new_request.haml (8.1ms)
+Rendered requests/_new_request.haml (8.1ms)
+Rendered users/getting_started/_step_2.html.haml (42.5ms)
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (14.5ms)
+Rendered posts/_debug.haml (3.4ms)
+Rendered users/getting_started.html.haml within layouts/application (105.5ms)
+Completed 200 OK in 423ms (Views: 111.0ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 18:03:39 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (15.1ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered services/index.html.haml within layouts/application (67.7ms)
+Completed 200 OK in 369ms (Views: 73.3ms)
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /services
+Unsubscribing socket 2 from 4cd206217f125d090f0000de
+
+
+Started GET "/getting_started?step=3" for 127.0.0.1 at Wed Nov 03 18:03:51 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"3"}
+Rendered users/getting_started/_step_3.html.haml (5.4ms)
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (5.6ms)
+Rendered shared/_aspect_nav.haml (14.8ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered users/getting_started.html.haml within layouts/application (70.1ms)
+Completed 200 OK in 515ms (Views: 75.9ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at Wed Nov 03 18:03:53 -0700 2010
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+
+
+Started GET "/getting_started?step=3" for 127.0.0.1 at Wed Nov 03 18:04:28 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"3"}
+Rendered users/getting_started/_step_3.html.haml (5.6ms)
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.0ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered users/getting_started.html.haml within layouts/application (70.7ms)
+Completed 200 OK in 526ms (Views: 76.2ms)
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/getting_started?step=2" for 127.0.0.1 at Wed Nov 03 18:04:30 -0700 2010
+  Processing by UsersController#getting_started as HTML
+  Parameters: {"step"=>"2"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_users_getting_started__step___html_haml__682215932__622922348_492878 at /home/shailesh_sawant/diaspora/app/views/users/getting_started/_step_2.html.haml:13)
+Rendered requests/_new_request.haml (8.8ms)
+Rendered requests/_new_request.haml (9.1ms)
+Rendered requests/_new_request.haml (8.6ms)
+Rendered users/getting_started/_step_2.html.haml (46.4ms)
+Rendered js/_websocket_js.haml (9.2ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (16.5ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered users/getting_started.html.haml within layouts/application (116.2ms)
+Completed 200 OK in 579ms (Views: 122.2ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:04:45 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 454ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:04:45 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (19.4ms)
+Rendered js/_websocket_js.haml (7.9ms)
+Rendered aspects/_new_aspect.haml (6.9ms)
+Rendered shared/_aspect_nav.haml (155.6ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered users/getting_started.html.haml within layouts/application (223.3ms)
+Completed 200 OK in 536ms (Views: 228.6ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/users/4cd206217f125d090f0000de/edit" for 127.0.0.1 at Wed Nov 03 18:05:01 -0700 2010
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4cd206217f125d090f0000de"}
+Rendered js/_websocket_js.haml (7.8ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (15.3ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered users/edit.html.haml within layouts/application (75.4ms)
+Completed 200 OK in 382ms (Views: 80.8ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /users/4cd206217f125d090f0000de/edit
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 18:05:08 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.1ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (14.8ms)
+Rendered posts/_debug.haml (3.5ms)
+Rendered services/index.html.haml within layouts/application (71.2ms)
+Completed 200 OK in 375ms (Views: 76.7ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /services
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at Wed Nov 03 18:05:11 -0700 2010
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+
+
+Started GET "/auth/twitter/callback?oauth_token=ZVFYTQ0GoTURol6Z3LOsECeNCZlceYVE3b40lg7KE&oauth_verifier=4fwVPHFAQqCD5iLyDrbcr3CAP9NgEAcnVLmknqyAmxs" for 127.0.0.1 at Wed Nov 03 18:07:10 -0700 2010
+  Processing by ServicesController#create as HTML
+  Parameters: {"oauth_verifier"=>"4fwVPHFAQqCD5iLyDrbcr3CAP9NgEAcnVLmknqyAmxs", "oauth_token"=>"ZVFYTQ0GoTURol6Z3LOsECeNCZlceYVE3b40lg7KE", "provider"=>"twitter"}
+Redirected to http://localhost:3000/services
+Completed 302 Found in 469ms
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 18:07:12 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (9.4ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.7ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered services/index.html.haml within layouts/application (78.6ms)
+Completed 200 OK in 538ms (Views: 84.6ms)
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /services
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:07:47 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 322ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:07:48 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (20.1ms)
+Rendered js/_websocket_js.haml (8.8ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (15.4ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered users/getting_started.html.haml within layouts/application (85.4ms)
+Completed 200 OK in 409ms (Views: 90.9ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:07:51 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 452ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:07:52 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (21.7ms)
+Rendered js/_websocket_js.haml (8.9ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (16.6ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered users/getting_started.html.haml within layouts/application (92.8ms)
+Completed 200 OK in 568ms (Views: 98.7ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/people/4cd206217f125d090f0000df" for 127.0.0.1 at Wed Nov 03 18:07:56 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cd206217f125d090f0000df"}
+Rendered js/_websocket_js.haml (166.9ms)
+Rendered aspects/_new_aspect.haml (6.9ms)
+Rendered shared/_aspect_nav.haml (18.3ms)
+Rendered posts/_debug.haml (4.3ms)
+Rendered people/show.html.haml within layouts/application (228.9ms)
+Completed 200 OK in 565ms (Views: 234.4ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /people/4cd206217f125d090f0000df
+
+
+Started GET "/people/4cd206217f125d090f0000df" for 127.0.0.1 at Wed Nov 03 18:08:02 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cd206217f125d090f0000df"}
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.0ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered people/show.html.haml within layouts/application (64.4ms)
+Completed 200 OK in 394ms (Views: 71.5ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /people/4cd206217f125d090f0000df
+
+
+Started GET "/aspects/4cd206227f125d090f0000e0" for 127.0.0.1 at Wed Nov 03 18:08:05 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cd206227f125d090f0000e0"}
+Rendered shared/_add_friend_dropdown.html.haml (3.3ms)
+Rendered requests/_new_request.haml (13.2ms)
+Rendered invitations/_new.haml (7.6ms)
+Rendered shared/_invitations.haml (10.8ms)
+Rendered shared/_aspect_friends.haml (42.7ms)
+Rendered aspects/_no_friends_message.haml (4.0ms)
+Rendered shared/_publisher.haml (55.6ms)
+Rendered aspects/_no_posts_message.haml (2.0ms)
+Rendered js/_websocket_js.haml (148.3ms)
+Rendered aspects/_new_aspect.haml (7.0ms)
+Rendered shared/_aspect_nav.haml (18.2ms)
+Rendered posts/_debug.haml (4.3ms)
+Rendered aspects/show.html.haml within layouts/application (311.1ms)
+Completed 200 OK in 650ms (Views: 316.7ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /aspects/4cd206227f125d090f0000e0
+
+
+Started GET "/users/4cd206217f125d090f0000de/edit" for 127.0.0.1 at Wed Nov 03 18:08:28 -0700 2010
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4cd206217f125d090f0000de"}
+Rendered js/_websocket_js.haml (8.4ms)
+Rendered aspects/_new_aspect.haml (5.5ms)
+Rendered shared/_aspect_nav.haml (15.3ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered users/edit.html.haml within layouts/application (77.1ms)
+Completed 200 OK in 392ms (Views: 82.6ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /users/4cd206217f125d090f0000de/edit
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 18:08:30 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.2ms)
+Rendered aspects/_new_aspect.haml (6.3ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered services/index.html.haml within layouts/application (72.5ms)
+Completed 200 OK in 379ms (Views: 78.3ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /services
+
+
+Started GET "/aspects/4cd206227f125d090f0000e0" for 127.0.0.1 at Wed Nov 03 18:08:51 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cd206227f125d090f0000e0"}
+Rendered shared/_add_friend_dropdown.html.haml (3.4ms)
+Rendered requests/_new_request.haml (13.2ms)
+Rendered invitations/_new.haml (7.8ms)
+Rendered shared/_invitations.haml (11.2ms)
+Rendered shared/_aspect_friends.haml (44.6ms)
+Rendered aspects/_no_friends_message.haml (4.3ms)
+Rendered shared/_publisher.haml (56.6ms)
+Rendered aspects/_no_posts_message.haml (2.0ms)
+Rendered js/_websocket_js.haml (7.8ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (15.7ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered aspects/show.html.haml within layouts/application (169.7ms)
+Completed 200 OK in 642ms (Views: 175.6ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /aspects/4cd206227f125d090f0000e0
+
+
+Started POST "/status_messages" for 127.0.0.1 at Wed Nov 03 18:08:58 -0700 2010
+  Processing by StatusMessagesController#create as JS
+  Parameters: {"authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "status_message"=>{"to"=>"4cd206227f125d090f0000e0", "message"=>"helo"}}
+Rendered shared/_reshare.haml (11.3ms)
+Rendered comments/_new_comment.html.haml (5.5ms)
+Rendered comments/_comments.html.haml (12.2ms)
+Rendered status_messages/_status_message.html.haml (43.2ms)
+Websocketing to 4cd206217f125d090f0000de
+Rendered text template (0.0ms)
+Completed 200 OK in 900ms (Views: 1.3ms)
+
+
+Started GET "/status_messages/4cd207aa7f125d090f000111" for 127.0.0.1 at Wed Nov 03 18:09:34 -0700 2010
+  Processing by StatusMessagesController#show as HTML
+  Parameters: {"id"=>"4cd207aa7f125d090f000111"}
+Rendered shared/_author_info.html.haml (23.9ms)
+Rendered comments/_new_comment.html.haml (5.5ms)
+Rendered comments/_comments.html.haml (10.2ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (6.5ms)
+Rendered shared/_aspect_nav.haml (16.4ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered status_messages/show.html.haml within layouts/application (104.3ms)
+Completed 200 OK in 465ms (Views: 120.7ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /status_messages/4cd207aa7f125d090f000111
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:09:44 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 357ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:09:45 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (21.3ms)
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (6.5ms)
+Rendered shared/_aspect_nav.haml (16.7ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered users/getting_started.html.haml within layouts/application (90.0ms)
+Completed 200 OK in 549ms (Views: 95.8ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:09:53 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 507ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:09:53 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (19.4ms)
+Rendered js/_websocket_js.haml (160.1ms)
+Rendered aspects/_new_aspect.haml (7.0ms)
+Rendered shared/_aspect_nav.haml (18.1ms)
+Rendered posts/_debug.haml (4.5ms)
+Rendered users/getting_started.html.haml within layouts/application (240.7ms)
+Completed 200 OK in 568ms (Views: 246.5ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:11:02 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 356ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:11:02 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (21.5ms)
+Rendered js/_websocket_js.haml (9.0ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (15.8ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered users/getting_started.html.haml within layouts/application (89.7ms)
+Completed 200 OK in 573ms (Views: 95.4ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:13:23 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 518ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:13:24 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (23.0ms)
+Rendered js/_websocket_js.haml (9.4ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (16.4ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered users/getting_started.html.haml within layouts/application (94.3ms)
+Completed 200 OK in 574ms (Views: 100.8ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:13:26 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 359ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:13:26 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (20.6ms)
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (5.9ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered users/getting_started.html.haml within layouts/application (87.4ms)
+Completed 200 OK in 421ms (Views: 93.1ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/people/4cd206217f125d090f0000df" for 127.0.0.1 at Wed Nov 03 18:13:32 -0700 2010
+  Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"4cd206217f125d090f0000df"}
+Rendered shared/_reshare.haml (9.5ms)
+Rendered comments/_new_comment.html.haml (5.7ms)
+Rendered comments/_comments.html.haml (10.6ms)
+Rendered status_messages/_status_message.html.haml (38.4ms)
+Rendered js/_websocket_js.haml (8.3ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (14.9ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered people/show.html.haml within layouts/application (102.6ms)
+Completed 200 OK in 457ms (Views: 108.4ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /people/4cd206217f125d090f0000df
+
+
+Started GET "/people/4cd206217f125d090f0000df/edit" for 127.0.0.1 at Wed Nov 03 18:13:41 -0700 2010
+  Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"4cd206217f125d090f0000df"}
+Rendered js/_websocket_js.haml (8.7ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (15.9ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered people/edit.html.haml within layouts/application (80.8ms)
+Completed 200 OK in 400ms (Views: 86.3ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /people/4cd206217f125d090f0000df/edit
+
+
+Started GET "/users/4cd206217f125d090f0000de/edit" for 127.0.0.1 at Wed Nov 03 18:13:44 -0700 2010
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4cd206217f125d090f0000de"}
+Rendered js/_websocket_js.haml (8.4ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (16.0ms)
+Rendered posts/_debug.haml (3.7ms)
+Rendered users/edit.html.haml within layouts/application (79.7ms)
+Completed 200 OK in 528ms (Views: 85.1ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /users/4cd206217f125d090f0000de/edit
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 18:13:46 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.9ms)
+Rendered aspects/_new_aspect.haml (6.2ms)
+Rendered shared/_aspect_nav.haml (16.1ms)
+Rendered posts/_debug.haml (3.8ms)
+Rendered services/index.html.haml within layouts/application (76.3ms)
+Completed 200 OK in 533ms (Views: 82.3ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /services
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at Wed Nov 03 18:13:58 -0700 2010
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+
+
+Started GET "/aspects/4cd206227f125d090f0000e0" for 127.0.0.1 at Wed Nov 03 18:14:14 -0700 2010
+  Processing by AspectsController#show as HTML
+  Parameters: {"id"=>"4cd206227f125d090f0000e0"}
+Rendered shared/_add_friend_dropdown.html.haml (3.4ms)
+Rendered requests/_new_request.haml (13.3ms)
+Rendered invitations/_new.haml (8.5ms)
+Rendered shared/_invitations.haml (12.0ms)
+Rendered shared/_aspect_friends.haml (46.5ms)
+Rendered aspects/_no_friends_message.haml (4.4ms)
+Rendered shared/_publisher.haml (11.6ms)
+Rendered aspects/_no_posts_message.haml (2.2ms)
+Rendered shared/_reshare.haml (9.8ms)
+Rendered comments/_new_comment.html.haml (6.3ms)
+Rendered comments/_comments.html.haml (11.0ms)
+Rendered status_messages/_status_message.html.haml (39.5ms)
+Rendered js/_websocket_js.haml (8.6ms)
+Rendered aspects/_new_aspect.haml (6.0ms)
+Rendered shared/_aspect_nav.haml (16.2ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered aspects/show.html.haml within layouts/application (170.0ms)
+Completed 200 OK in 681ms (Views: 175.5ms)
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /aspects/4cd206227f125d090f0000e0
+
+
+Started POST "/users/invitation" for 127.0.0.1 at Wed Nov 03 18:14:30 -0700 2010
+  Processing by InvitationsController#create as HTML
+  Parameters: {"commit"=>"Send an invitation", "authenticity_token"=>"5BsmaGpr2vSv7LXjg7U+Izi+lI6tkyTGsYMv6zoh8Tc=", "utf8"=>"✓", "user"=>{"invite_messages"=>"", "aspects"=>"4cd206227f125d090f0000e0", "email"=>"rockisstone@rediffmail.com"}}
+aditya rao is adding xml to message queue to http://example.org/receive/users/4cd206217f125d090f0000df/
+Redirected to http://localhost:3000/
+Completed 302 Found in 825ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:14:31 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 497ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:14:32 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (19.9ms)
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (7.0ms)
+Rendered shared/_aspect_nav.haml (18.1ms)
+Rendered posts/_debug.haml (4.1ms)
+Rendered users/getting_started.html.haml within layouts/application (244.6ms)
+Completed 200 OK in 569ms (Views: 250.4ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+
+
+Started GET "/" for 127.0.0.1 at Wed Nov 03 18:14:36 -0700 2010
+  Processing by AspectsController#index as HTML
+Redirected to http://localhost:3000/getting_started
+Completed 302 Found in 357ms
+
+
+Started GET "/getting_started" for 127.0.0.1 at Wed Nov 03 18:14:37 -0700 2010
+  Processing by UsersController#getting_started as HTML
+Rendered users/getting_started/_step_1.html.haml (21.8ms)
+Rendered js/_websocket_js.haml (8.5ms)
+Rendered aspects/_new_aspect.haml (5.7ms)
+Rendered shared/_aspect_nav.haml (15.5ms)
+Rendered posts/_debug.haml (3.6ms)
+Rendered users/getting_started.html.haml within layouts/application (89.5ms)
+Completed 200 OK in 570ms (Views: 96.0ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /getting_started
+Unsubscribing socket 1 from 4cd206217f125d090f0000de
+Websocketing to 4cd209ba7f125d0c7e000012
+Websocketing to 4cd2096a7f125d0c20000012
+Websocketing to 4cd20a527f125d0e27000012
+
+
+Started GET "/services" for 127.0.0.1 at Wed Nov 03 23:01:52 -0700 2010
+  Processing by ServicesController#index as HTML
+Rendered js/_websocket_js.haml (8.0ms)
+Rendered aspects/_new_aspect.haml (6.1ms)
+Rendered shared/_aspect_nav.haml (15.5ms)
+Rendered posts/_debug.haml (3.9ms)
+Rendered services/index.html.haml within layouts/application (77.2ms)
+Completed 200 OK in 341ms (Views: 82.7ms)
+Subscribing socket to 4cd206217f125d090f0000de
+Socket received connection to: /services
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Thu Nov 04 21:32:46 -0700 2010
+  Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 349ms
+
+
+Started GET "/" for 127.0.0.1 at Thu Nov 04 21:32:46 -0700 2010
+  Processing by AspectsController#index as HTML
+Completed   in 71ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Thu Nov 04 21:32:46 -0700 2010
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.haml (3.4ms)
+Rendered posts/_debug.haml (4.0ms)
+Rendered devise/sessions/new.html.haml within layouts/application (134.5ms)
+Completed 200 OK in 379ms (Views: 140.9ms)
+Unsubscribing socket 1 from 4cd206217f125d090f0000de

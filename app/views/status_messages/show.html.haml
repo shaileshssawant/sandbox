@@ -1,0 +1,21 @@
+-#   Copyright (c) 2010, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+
+= render 'shared/author_info', :person => @status_message.person, :post => @status_message
+
+.span-14.append-1.last
+  %h1.show_text
+    = markdownify(@status_message.message)
+
+  = how_long_ago(@status_message)
+
+  - if current_user.owns? @status_message
+    %p
+      = link_to t('.destroy'), @status_message, :confirm => t('are_you_sure'), :method => :delete
+
+.span-9.last
+  #stream.show
+    %li.message{:data=>{:guid=>@status_message.id}}
+      = render "comments/comments", :post => @status_message

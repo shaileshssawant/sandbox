@@ -1,0 +1,31 @@
+-#   Copyright (c) 2010, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+
+#left_pane
+  %h2= aspect == :all ? t('.everyone') : aspect
+
+  .friend_pictures
+    = owner_image_link
+
+    - for friend in people
+      = person_image_link(friend)
+
+    -unless (aspect == :all)
+      = link_to (image_tag('add_friend_button.png', :title => "#{t('.add_to', :aspect => @aspect)}")), "#add_request_pane", :class => 'add_request_button'
+
+      .fancybox_content
+        #add_request_pane
+          = render "requests/new_request", :aspect => @aspect
+    -else
+      .clear
+        %br
+        = link_to t('.add_friends'), aspects_manage_path
+
+  %br
+  %br
+  %br
+  %br
+
+  = render "shared/invitations", :invites => @invites

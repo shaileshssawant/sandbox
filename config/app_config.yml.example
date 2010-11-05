@@ -1,0 +1,32 @@
+#   Copyright (c) 2010, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+default:
+  pod_url: "http://example.org/"
+  debug: false
+  socket_debug : false
+  socket_host: 0.0.0.0
+  socket_pidfile: "log/diaspora-wsd.pid"
+  socket_port: 8080
+  socket_collection_name: 'websocket'
+  pubsub_server: 'https://pubsubhubbub.appspot.com/'
+  mongo_host: 'localhost'
+  mongo_port: 27017
+  mailer_on: false
+  smtp_address: 'smtp.example.com'
+  smtp_port: '587'
+  smtp_domain: 'mail.example.com'
+  smtp_authentication: 'plain'
+  smtp_sender_address: 'no-reply@example.com'
+  smtp_username: 'no-reply@example.com'
+  smtp_password: 'secret'
+
+
+development:
+
+test:
+  pod_url: "http://example.org/"
+  socket_port: 8081
+
+production:
